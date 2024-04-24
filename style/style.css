@@ -4286,7 +4286,7 @@ footer {
         height: 296.2422vw;
         position: relative;
         margin-top: 145.9290vw; */
-        /* 임의 마진 */
+    /* 임의 마진 */
     /* } */
 
     /* #guitarBody hgroup {
@@ -4420,7 +4420,7 @@ footer {
 
 
     /* 메인  limited섹션*/
-    /* #limited {
+    #limited {
         width: 100%;
         margin-bottom: 54.2797vw;
         padding-top: 20.8768vw;
@@ -4428,39 +4428,40 @@ footer {
 
     #limited hgroup {
         text-align: left;
-        margin: 10.4384vw;
-        padding-left: 0.4175vw;
+        margin: 10.4384vw 0;
+        margin-left: 6.2630vw;
+        width: 90%;
     }
 
     #limited hgroup h2 {
-        width: 170.7724vw;
-        font-size: 10.0209vw;
+        font-size: 6.2630vw;
         letter-spacing: 0.4175vw;
 
     }
 
     #limited hgroup p {
-        font-size: 5.0104vw;
+        font-size: 4.1754vw;
         margin-bottom: 0.4175vw;
     }
 
 
     #limited #videoTest {
-        width: 188.7265vw;
-        height: 125.2610vw;
+        display: block;
+        height: 90vw;
+        width: 82.8372vw;
         border-radius: 3.1315vw;
-
+        margin: 0 auto;
     }
 
     #limited #videoTest::after {
-        width: 19.6242vw;
-        height: 19.6242vw;
+        width: 15vw;
+        height: 15vw;
     }
 
     .limitedVideo {
         text-align: left;
         margin-top: 12.5261vw;
-        padding: 0 10.4384vw;
+        padding: 0 6.2630vw;
     }
 
     .limitedVideo dt {
@@ -4468,15 +4469,18 @@ footer {
     }
 
     .limitedVideo dd {
-        font-size: 5.0104vw;
+        font-size: 4.1754vw;
         line-height: 1.5;
         margin: 0;
-        width: 121.0856vw;
+        width: 98.5%;
     }
 
     #limitedBtn {
-        width: 103.1315vw;
-        margin: 25.0522vw 0 0 0;
+        width: 100%;
+        margin: 35vw 0 0 0;
+        display: flex;
+        justify-content: start;
+        padding-left: 4vw;
     }
 
     #limitedBtn .buy {
@@ -4493,44 +4497,45 @@ footer {
         line-height: 15.2401vw;
         font-size: 4.3841vw;
         border-radius: 10.4384vw;
-        margin-left: -6.6806vw;
+        margin-left: 4vw;
 
-    }  */
+    }
 
     /* 메인 artist섹션 */
-    /* #artist {
+    #artist {
         width: 100%;
         margin-bottom: 20.8768vw;
     }
 
     #artist hgroup {
         text-align: left;
-        padding: 0 2.5052vw;
+        padding: 0;
         margin-bottom: 10.4384vw;
+        width: 65%;
     }
 
     #artist hgroup h2 {
-        font-size: 10.0209vw;
+        font-size: 7.5157vw;
         letter-spacing: 0.4175vw;
-        margin-left: -4.1754vw;
+        margin-left: 0;
     }
 
     #artist hgroup p {
-        font-size: 5.0104vw;
+        font-size: 4.1754vw;
         margin-bottom: 0.4175vw;
-        margin-left: -4.1754vw;
+        margin-left: 0;
 
     }
 
     /* 카드grid */
-    /* #artistGrid {
+    #artistGrid {
         width: 100%;
         height: 167.0146vw;
-        padding: 0 10.4384vw;
+        padding: 0 6.2630vw;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        gap: 2.5052vw;
+        grid-template-rows: repeat(8, 1fr);
+        gap: 3vw;
     }
 
 
@@ -4561,16 +4566,16 @@ footer {
 
     #artistGrid div:nth-of-type(1) {
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 4;
         grid-row-start: 1;
-        grid-row-end: 3;
+        grid-row-end: 5;
     }
 
     #artistGrid div:nth-of-type(2) {
         grid-column-start: 1;
         grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 8;
+        grid-row-start: 5;
+        grid-row-end: 9;
     }
 
     #artistGrid div:nth-of-type(3) {
@@ -4578,61 +4583,57 @@ footer {
         grid-column-end: 8;
         grid-row-start: 3;
         grid-row-end: 6;
-
     }
 
     #artistGrid div:nth-of-type(4) {
         grid-column-start: 4;
         grid-column-end: 8;
         grid-row-start: 6;
-        grid-row-end: 8;
-
+        grid-row-end: 9;
     }
 
     #artistGrid div:nth-of-type(5) {
-        grid-column-start: 3;
+        grid-column-start: 4;
         grid-column-end: 8;
         grid-row-start: 1;
         grid-row-end: 3;
-    } */ 
+    }
 
     /* 아티스트 btn */
-    /* #artist .more {
+    #artist .more {
         margin-top: 8.3507vw;
-    } */
+    }
 
     /* 메인 song섹션 */
-    /* #song {
+    #song {
         width: 100%;
         margin: 70.9812vw 0 20.8768vw 0;
     }
 
     #song hgroup {
         margin: 9.1858vw 0;
-        padding: 0 10.4384vw;
+        padding: 0;
         text-align: left;
     }
 
     #song hgroup h2 {
-        font-size: 10.0209vw;
+        font-size: 7.5157vw;
+        width: 90%;
         letter-spacing: 0.4175vw;
-        margin-left: 0.8351vw;
+        margin-left: 6.2630vw;
     }
 
     #song hgroup p {
         font-size: 5.0104vw;
         margin-bottom: 0.4175vw;
-        margin-left: 0.8351vw;
-
-    } */
+        margin-left: 6.2630vw;
+    }
 
 
     /* song grid */
-    /* #songWrap {
-        padding: 0 10.4384vw;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+    #songWrap {
+        padding: 0 6.2630vw;
+        display: flex;
         gap: 6.4718vw;
         overflow: hidden;
 
@@ -4640,7 +4641,7 @@ footer {
 
     #songWrap dl {
         margin-top: 3.3403vw;
-        text-align: center;
+        text-align: left;
     }
 
     #songWrap a {
@@ -4652,64 +4653,65 @@ footer {
     }
 
     #songWrap a dl>dt {
-        font-size: 5.0104vw;
+        font-size: 5.4280vw;
         margin: 1.6701vw 0 0.6263vw 0;
         text-transform: uppercase;
         line-height: 1.2;
+
     }
 
     #songWrap a:nth-of-type(1):before {
-        width: 58.4551vw;
-        height: 58.4551vw;
+        width: 66.8058vw;
+        height: 66.8058vw;
         border-radius: 3.1315vw;
 
     }
 
     #songWrap a:nth-of-type(2):before {
-        width: 58.4551vw;
-        height: 58.4551vw;
+        width: 66.8058vw;
+        height: 66.8058vw;
         border-radius: 3.1315vw;
     }
 
     #songWrap a:nth-of-type(3):before {
-        width: 58.4551vw;
-        height: 58.4551vw;
+        width: 66.8058vw;
+        height: 66.8058vw;
         border-radius: 3.1315vw;
     }
 
     #songWrap a:nth-of-type(4):before {
-        width: 58.4551vw;
-        height: 58.4551vw;
+        width: 66.8058vw;
+        height: 66.8058vw;
         border-radius: 3.1315vw;
     }
 
     #songWrap a:nth-of-type(5):before {
-        width: 58.4551vw;
-        height: 58.4551vw;
+        width: 66.8058vw;
+        height: 66.8058vw;
         border-radius: 3.1315vw;
     }
 
     #songWrap a:nth-of-type(6):before {
-        width: 58.4551vw;
-        height: 58.4551vw;
+        width: 66.8058vw;
+        height: 66.8058vw;
         border-radius: 3.1315vw;
     }
 
     #songWrap a:nth-of-type(7):before {
-        width: 58.4551vw;
-        height: 58.4551vw;
+        width: 66.8058vw;
+        height: 66.8058vw;
         border-radius: 3.1315vw;
     }
 
     #songWrap a:nth-of-type(8):before {
-        width: 58.4551vw;
-        height: 58.4551vw;
+        width: 66.8058vw;
+        height: 66.8058vw;
         border-radius: 3.1315vw;
     }
 
     #songWrap a:nth-of-type(9):before {
-        width: 58.4551vw;
-        height: 58.4551vw;
+        width: 66.8058vw;
+        height: 66.8058vw;
         border-radius: 3.1315vw;
     }
 
@@ -4724,11 +4726,11 @@ footer {
     #song .more {
         margin-top: 8.3507vw;
         margin-bottom: 41.7537vw;
-    } */
+    }
 
     /* 메인 brand섹션 */
     /* 제목  */
-    /* #brand {
+    #brand {
         width: 100%;
         margin-bottom: 64.0919vw;
     }
@@ -4736,23 +4738,23 @@ footer {
     #brand hgroup {
         padding: 0;
         text-align: left;
-        padding-left: 11.6910vw;
+        padding-left: 6.2630vw;
     }
 
     #brand hgroup h2 {
-        font-size: 10.0209vw;
+        font-size: 7.5157vw;
         letter-spacing: 0.4175vw;
-
+        width: 80%;
     }
 
     #brand hgroup p {
-        font-size: 5.0104vw;
+        font-size: 4.1754vw;
         margin-bottom: 0.4175vw;
-    } */
+    }
 
     /* 카드 */
-    /* #brandInner {
-        padding: 0 10.6472vw;
+    #brandInner {
+        padding: 0 6.2630vw;
         margin-top: 8.5595vw;
         display: grid;
         gap: 6.2630vw;
@@ -4760,30 +4762,74 @@ footer {
     }
 
     #brandInner dl {
-        height: 125.2610vw;
-        width: 188.7265vw;
+        height: 120vw;
+        width: 81.8372vw;
         padding: 9.6033vw;
         border-radius: 6.2630vw;
-        position: relative;
+        position: inherit;
         transition: 0;
+        margin: 0 auto;
+    }
 
-        &::before {
-            content: '';
-            display: block;
-            width: 188.7265vw;
-            height: 125.2610vw;
-            position: absolute;
-            background-color: #000000;
-            top: 0;
-            left: 0;
-            border-radius: 4.1754vw;
-            opacity: 0.3;
-            z-index: 98;
-        }
+    #brandInner dl:nth-of-type(1) {
+        position: relative;
+    }
+
+    #brandInner dl:nth-of-type(1)::before {
+        content: '';
+        display: block;
+        height: 120vw;
+        height: 120vw;
+        width: 81.8372vw;
+        position: absolute;
+        background-color: #000000;
+        top: 0;
+        left: 0;
+        border-radius: 4.1754vw;
+        opacity: 0.3;
+        z-index: 98;
+    }
+
+    #brandInner dl:nth-of-type(2) {
+        position: relative;
+    }
+
+    #brandInner dl:nth-of-type(2)::before {
+        content: '';
+        display: block;
+        height: 120vw;
+        height: 120vw;
+        width: 81.8372vw;
+        position: absolute;
+        background-color: #000000;
+        top: 0;
+        left: 0;
+        border-radius: 4.1754vw;
+        opacity: 0.3;
+        z-index: 98;
+    }
+
+    #brandInner dl:nth-of-type(3) {
+        position: relative;
+    }
+
+    #brandInner dl:nth-of-type(3)::before {
+        content: '';
+        display: block;
+        height: 120vw;
+        width: 81.8372vw;
+        position: absolute;
+        background-color: #000000;
+        top: 0;
+        left: 0;
+        border-radius: 4.1754vw;
+        opacity: 0.3;
+        z-index: 98;
     }
 
     #brandInner dt {
-        font-size: 8.7683vw;
+        width: 85%;
+        font-size: 7.5157vw;
         letter-spacing: 0.2088vw;
         margin-bottom: 0.6263vw;
         position: relative;
@@ -4793,20 +4839,24 @@ footer {
     }
 
     #brandInner dd {
-        font-size: 3.7578vw;
+        font-size: 4.1754vw;
         letter-spacing: 0.2088vw;
         position: relative;
         z-index: 99;
         transition: 0s;
     }
 
+    #brandInner dd:nth-of-type(1) {
+        display: none;
+    }
+
     #brandInner dd:nth-of-type(2) {
         padding-top: 3.3403vw;
-        font-size: 5.0104vw;
-    } */
+        font-size: 5.4280vw;
+    }
 
     /* btn */
-    /* .more {
+    .more {
         width: 39.6660vw;
         height: 14.6138vw;
         line-height: 15.2401vw;
@@ -4816,10 +4866,10 @@ footer {
         bottom: -9.6033vw;
         left: 50%;
         transform: translateX(-50%);
-    } */
+    }
 
-    /* 카드 on off 기능 grid 크기 증가식 */
-    /* #brandInner dl:nth-of-type(1) {
+    /* 카드 on off 기능 grid 크기 증가식  */
+    #brandInner dl:nth-of-type(1) {
         border-radius: 4.1754vw;
 
     }
@@ -4866,7 +4916,7 @@ footer {
     #brandInner dd:nth-of-type(2) {
         margin-top: 3.5491vw;
         line-height: 1.4;
-    } */
+    }
 
 
 
@@ -4897,12 +4947,12 @@ footer {
     }
 
     .newsGridInner dt {
-        font-size: 6.6806vw;
+        font-size: 5.8455vw;
         margin-bottom: 4.1754vw;
         letter-spacing: 0.4175vw;
         margin-left: 5.0104vw;
         line-height: 1.3;
-        width: 80%;
+        width: 90%;
     }
 
     .newsGridInner dd {
@@ -4922,13 +4972,14 @@ footer {
     #newsGrid.one::before {
         content: '';
         display: block;
-        width: 87.2651vw;
+        width: 82.2651vw;
         height: 79.3319vw;
         border-radius: 4.1754vw;
         background: url(../img/news1.jpg) no-repeat center/cover;
-        grid-column-start: 2;
-        position: relative;
-        left: -14vw;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        position: inherit;
+        margin: 0 auto;
     }
 
     #newsGrid.two::before {
@@ -4947,7 +4998,7 @@ footer {
     #news a:nth-of-type(1) {
         width: 39.6660vw;
         height: 14.6138vw;
-        line-height: 15.2401vw;
+        line-height: 14.6138vw;
         font-size: 4.3841vw;
         border-radius: 10.4384vw;
         bottom: -40vw;
@@ -4957,7 +5008,7 @@ footer {
     #news a:nth-of-type(2) {
         width: 39.6660vw;
         height: 14.6138vw;
-        line-height: 15.2401vw;
+        line-height: 14.6138vw;
         font-size: 4.3841vw;
         border-radius: 16.0752vw;
         bottom: -40vw;
@@ -5016,6 +5067,8 @@ footer {
     }
 
     #footerInner small {
+        width: 83.5073vw;
+        font-size: 3.3403vw;
         display: block;
         margin-top: 5.0104vw;
         line-height: 1.5;
