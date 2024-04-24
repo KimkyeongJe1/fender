@@ -1,0 +1,28 @@
+/* 전체화 */
+:root{
+    font: inherit;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+/* 초기화 */
+body,header,h1,nav,ul,li,a,main,section,dl,dt,dd,span,h2,p,video{
+    margin: 0;
+    padding: 0;
+}
+.hidden{
+    width: 1px;
+    position: absolute;
+    text-indent: -9999px;
+    clip:rect(0,0,0,0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+

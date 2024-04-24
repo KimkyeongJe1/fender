@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/slick.css">
+    <link rel="stylesheet" href="./style/slick-theme.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/slick.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="logo"><a href="#">Fender</a></h1>
+        <!-- 로고 -->
+        <nav id="gnb">
+            <h2 class="hidden">Fender 주 이용메뉴</h2>
+            <ul id="gnbInner">
+                <li><a href="#">기타</a>
+                    <ul class="lnb">
+                        <li><a href="#">전체보기</a></li>
+                        <li><a href="#">한정판 제품</a></li>
+                        <li><a href="#">스트라토캐스터</a></li>
+                        <li><a href="#">텔레캐스터</a></li>
+                        <li><a href="#">재즈마스터</a></li>
+                        <li><a href="#">어쿠스틱기타</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">베이스</a>
+                    <ul class="lnb">
+                        <li><a href="#">전체보기</a></li>
+                        <li><a href="#">한정판 제품</a></li>
+                        <li><a href="#">재즈베이스</a></li>
+                        <li><a href="#">재규어베이스</a></li>
+                        <li><a href="#">머스탱베이스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">앰프/오디오</a>
+                    <ul class="lnb">
+                        <li><a href="#">전체보기</a></li>
+                        <li><a href="#">기타앰프</a></li>
+                        <li><a href="#">베이스앰프</a></li>
+                        <li><a href="#">이펙터</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">액세서리</a>
+                    <ul class="lnb">
+                        <li><a href="#">전체보기</a></li>
+                        <li><a href="#">케이스</a></li>
+                        <li><a href="#">피크</a></li>
+                        <li><a href="#">스탠드</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">아티스트</a>
+                    <ul class="lnb">
+                        <li><a href="#">아티스트</a></li>
+                        <li><a href="#">youtube</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">브랜드</a>
+                    <ul class="lnb">
+                        <li><a href="#">펜더소개</a></li>
+                        <li><a href="#">뉴스</a></li>
+                        <li><a href="#">문의하기</a></li>
+                        <li><a href="#">채용</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- gnb 이용메뉴 -->
+        <div id="snb">
+            <a href="#">검색</a>
+            <!-- after 돋보기 이미지 -->
+            <ul id="language">
+                <li><a href="#">KR</a></li>
+                <li><a href="#" class="lngOn">EN</a></li>
+            </ul>
+            <!-- after 언더라인 -->
+        </div>
+        <!-- snb 검색창, 언어창 -->
+    </header>
+    <main>
+        <section id="banner">
+            <h2 class="hidden">슬로건, 제품 및 시리즈 관련 배너</h2>
+            <!-- 슬로건 banner >>  hidden  슬라이드  https://kenwheeler.github.io/slick/-->
+            <div id="bannerInner">
+                <div>
+                    <dl class="card card1">
+                        <dt>
+                            아티스트는 천사와 같으며, <br>
+                            펜더는 날개를 달아 줄 것이다
+                        </dt>
+                        <dd>
+                            fender is our life and music, make a best
+                        </dd>
+                    </dl>
+                    <!-- card1  -->
+                    <dl class="card card2">
+                        <dt>
+                            링컨 브루스터<br>
+                            스트라토캐스터
+                        </dt>
+                        <dd>
+                            진정한 클래식과 시대를 초월한 빈티지
+                        </dd>
+                        <!-- <dd><a href="#">바로가기</a></dd> -->
+                    </dl>
+                    <!-- card2 -->
+                    <dl class="card card3">
+                        <dt>
+                            한정판 아티스트 콜라보<br>
+                            라파엘 사딕
+                        </dt>
+                        <dd>복고와 현대의 조화로 만들어낸 아름다움</dd>
+                    </dl>
+                    <!-- card3 -->
+                    <dl class="card card4">
+                        <dt>
+                            highway
+                        </dt>
+                        <dd>
+                            간소화된 highway 시리즈는<br>
+                            라이브 어쿠스틱 연주자를 위해 제작되었습니다
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="section1Btn">
+                <div class="prevBtn"></div>
+                <div class="playBtn"></div>
+                <a href="#" class="playOn"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class="nextBtn"></div>
+            </div>
+            <!-- card4 -->
+        </section>
+        <!-- 섹션 배너 -->
+        <section id="shop">
+            <hgroup id="shopInner">
+                <h2>펜더만의 특별한 제품들</h2>
+                <p>펜더로 시작하다</p>
+            </hgroup>
+            <ul id="shopList">
+                <li><a href="#">일렉기타</a></li>
+                <li><a href="#">어쿠스틱 기타</a></li>
+                <li><a href="#">베이스</a></li>
+                <li><a href="#">앰프</a></li>
+                <li><a href="#">이펙터</a></li>
+                <li><a href="#">패스포트/오디오</a></li>
+                <li><a href="#">케이스</a></li>
+                <li><a href="#">피크</a></li>
+            </ul>
+            <div id="slideLine">
+                <div id="slideLineInner"></div>
+                <!-- slideLine 전체영역 slideLineInner 100/8% -->
+            </div>
+            <ul id="shopCard">
+                <li class="shopPr shopPr1">
+                    <dl>
+                        <dt class="shopName">
+                            <a href="#">
+                                american vintageII 1961 <br><span>stratocaster</span>
+                            </a>
+                        </dt>
+                        <dd><img src="./img/shop1.png" alt="redguitar"></dd>
+                        <dd class="shopPrice">2,430,000 KRW</dd>
+                        <dd class="color sunbust">asunbust</dd>
+                        <dd class="color wood">wood</dd>
+                        <dd class="color maple">maple</dd>
+                    </dl>
+                </li>
+                <li class="shopPr shopPr2">
+                    <dl>
+                        <dt class="shopName">
+                            <a href="#">
+                                american ultra hssII 1961 <br>
+                                <span>stratocaster</span>
+                            </a>
+                        </dt>
+                        <dd><img src="./img/shop2.png" alt="redguitar"></dd>
+                        <dd class="shopPrice">3,038,000 KRW</dd>
+                        <dd class="color">black</dd>
+                        <dd class="color">gray</dd>
+                        <dd class="color">purple</dd>
+                        <dd class="color">orange</dd>
+                    </dl>
+
+                </li>
+                <li class="shopPr shopPr3">
+                    <dl>
+                        <dt class="shopName">
+                            <a href="#">
+                                american professional II<br>
+                                <span>stratocaster</span>
+                            </a>
+                        </dt>
+                        <dd><img src="./img/shop3.png" alt="redguitar"></dd>
+                        <dd class="shopPrice">1,080,000 KRW</dd>
+                        <dd class="color">red</dd>
+                        <dd class="color">orange</dd>
+                        <dd class="color">yellow</dd>
+                        <dd class="color">deep green</dd>
+                        <dd class="color">green</dd>
+                    </dl>
+                </li>
+
+                <li class="shopPr shopPr4">
+                    <dl>
+                        <dt class="shopName">
+                            <a href="#">
+                                american vintageII 1972 <br>
+                                <span>telecaster</span>
+                            </a>
+                        </dt>
+                        <dd><img src="./img/shop4.png" alt="redguitar"></dd>
+                        <dd class="shopPrice">3,510,000 KRW</dd>
+                        <dd class="color">blue</dd>
+                        <dd class="color">wine</dd>
+                        <dd class="color">maple-wood</dd>
+                    </dl>
+                </li>
+
+                <li class="shopPr shopPr5">
+                    <dl>
+                        <dt class="shopName">
+                            <a href="#">
+                                american vintageII 1963 <br>
+                                <span>telecaster</span>
+                            </a>
+                        </dt>
+                        <dd><img src="./img/shop5.png" alt="redguitar"></dd>
+                        <dd class="shopPrice">3,230,000 KRW</dd>
+                        <dd class="color">light-green</dd>
+                        <dd class="color">wine</dd>
+                        <dd class="color">red</dd>
+                    </dl>
+                </li>
+                <li class="shopPr shopPr6">
+                    <dl>
+                        <dt class="shopName">
+                            <a href="#">
+                                jimmy page<br>
+                                <span>telecaster</span>
+                            </a>
+                        </dt>
+                        <dd><img src="./img/shop6.png" alt="redguitar"></dd>
+                        <dd class="shopPrice">2,230,000 KRW</dd>
+                        <dd class="color"></dd>
+                    </dl>
+                </li>
+
+                <li class="shopPr shopPr7">
+                    <dl>
+                        <dt class="shopName">
+                            <a href="#">
+                                jim root jazzmaster v4 <br>
+                                <span>jazzmaster</span>
+                            </a>
+                        </dt>
+                        <dd><img src="./img/shop7.png" alt="redguitar"></dd>
+                        <dd class="shopPrice">2,425,000 KRW</dd>
+                        <dd class="color">light-gray</dd>
+                    </dl>
+                </li>
+
+                <li class="shopPr shopPr8">
+                    <dl>
+                        <dt class="shopName">
+                            <a href="#">
+                                vintera 605 <br>
+                                <span>jazzmaster</span>
+                            </a>
+                        </dt>
+                        <dd><img src="./img/shop8.png" alt="redguitar"></dd>
+                        <dd class="shopPrice">1,293,000 KRW</dd>
+                        <dd class="color">beige</dd>
+                    </dl>
+                </li>
+            </ul>
+            <a href="#" class="more" title="펜더샵 제품 더보기">더보기</a>
+        </section>
+        <!-- 섹션 샵 -->
+
+        <section id="guitarBody">
+            <hgroup>
+                <h2>음악의 선율에 소리를 더하다</h2>
+                <p>다양한 음악의 선, 바디로 날개를</p>
+            </hgroup>
+            <ul id="guitarBodyBtn">
+                <li class="bodyBtn"><a href="electric1">일렉기타</a>
+                    <div id="electric1">
+                        <a href="#">
+                            <dl class="bodyCard bodyCard1">
+                                <dt>stratocaster</dt>
+                                <dd>
+                                    스트라토 캐스터 <br>
+                                    클린 톤의 밝은 조화
+                                </dd>
+                                <dd>일렉트릭 기타의 정석을 담다</dd>
+                            </dl>
+                        </a>
+                        <a href="#">
+                            <dl class="bodyCard bodyCard2">
+                                <dt>telecaster</dt>
+                                <dd>
+                                    텔레캐스터 <br>
+                                    가벼우면서도 단단한 울림
+                                </dd>
+                                <dd>맑음과 묵직함을 담은 색다른 개성</dd>
+                            </dl>
+                        </a>
+                        <a href="#">
+                            <dl class="bodyCard bodyCard3">
+                                <dt>jazzmaster</dt>
+                                <dd>
+                                    재즈마스터 <br>
+                                    청량함과 부드러운 리듬
+                                </dd>
+                                <dd>노이즈와 빈티지의 레트로한 조화</dd>
+                            </dl>
+                        </a>
+                    </div>
+                </li>
+                <li class="bodyBtnWhite"><a href="#">베이스</a></li>
+                <li class="bodyBtnWhite"><a href="#">클래식기타</a></li>
+                <li class="bodyBtnWhite"><a href="#">앰프</a></li>
+            </ul>
+
+        </section>
+        <!-- 섹션 기타바디 -->
+
+        <section id="limited">
+            <hgroup>
+                <h2>펜더 기타만의 특별한 아티스트 에디션</h2>
+                <p>fender artist limited edition</p>
+            </hgroup>
+            <div id="videoTest"></div>
+            <!-- div 이미지 확인용 추후 youtube 링크 달아오기 태그 바꾸기-->
+            <dl class="limitedVideo limitedVideo1">
+                <dt>
+                    아티스트 시그니처 raphael saadik
+                </dt>
+                <dd>
+                    예리하며 빈티지한 음색을 지닌 그래미상 아티스트 raphael의 음악처럼 시대를 초월한
+                    raphael saadiq 모델은 복고와 현대의 조화로 놀라운 효과를 냅니다
+                </dd>
+            </dl>
+            <div id="limitedBtn">
+                <a href="#" class="buy">구매하기</a>
+                <a href="#" class="limitedMore">더보기</a>
+            </div>
+        </section>
+        <!-- 섹션 리미티드 에디션 -->
+
+        <section id="artist">
+            <hgroup>
+                <h2>펜더의 영혼을 지닌 아티스트</h2>
+                <p>fender souls artist</p>
+            </hgroup>
+            <div id="artistGrid">
+                <div>
+                    <a href="#">
+                        <dl>
+                            <dt>abcdefghijk</dt>
+                            <dd>efght</dd>
+                        </dl>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <dl>
+                            <dt>abcdefghijk</dt>
+                            <dd>efght</dd>
+                        </dl>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <dl>
+                            <dt>abcdefghijk</dt>
+                            <dd>efght</dd>
+                        </dl>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <dl>
+                            <dt>abcdefghijk</dt>
+                            <dd>efght</dd>
+                        </dl>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <dl>
+                            <dt>abcdefghijk</dt>
+                            <dd>efght</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="more">더보기</a>
+        </section>
+        <!-- 섹션 아티스트 -->
+        <section id="song">
+            <hgroup>
+                <h2>펜더의 선율을 담은 앨범</h2>
+                <p>fender artist album</p>
+            </hgroup>
+            <div id="songWrap">
+                <a href="#">
+                    <dl class="songCard songCard1">
+                        <dt>diseny music summer camp</dt>
+                        <dd class="hidden">diseny music</dd>
+                    </dl>
+                </a>
+                <a>
+                    <dl class="songCard songCard2">
+                        <dt>perfect</dt>
+                        <dd class="hidden">ED sheeran</dd>
+                    </dl>
+                </a>
+                <a>
+                    <dl class="songCard songCard3">
+                        <dt>while my guitar gently weeps</dt>
+                        <dd class="hidden">beatles</dd>
+                    </dl>
+                </a>
+                <a>
+                    <dl class="songCard songCard4">
+                        <dt>enter sandman</dt>
+                        <dd class="hidden">metalica</dd>
+                    </dl>
+                </a>
+                <a>
+                    <dl class="songCard songCard5">
+                        <dt>the beach boy's collection</dt>
+                        <dd class="hidden">the beach boy's</dd>
+                    </dl>
+                </a>
+                <a>
+                    <dl class="songCard songCard6">
+                        <dt>diseny music summer camp</dt>
+                        <dd class="hidden">diseny music</dd>
+                    </dl>
+                </a>
+                <a>
+                    <dl class="songCard songCard7">
+                        <dt>perfect</dt>
+                        <dd class="hidden">ED sheeran</dd>
+                    </dl>
+                </a>
+                <a>
+                    <dl class="songCard songCard8">
+                        <dt>while my guitar gently weeps</dt>
+                        <dd class="hidden">beatles</dd>
+                    </dl>
+                </a>
+                <a>
+                    <dl class="songCard songCard9">
+                        <dt>enter sandman</dt>
+                        <dd class="hidden">metalica</dd>
+                    </dl>
+                </a>
+                <a>
+                    <dl class="songCard songCard10">
+                        <dt>the beach boy's collection</dt>
+                        <dd class="hidden">the beach boy's</dd>
+                    </dl>
+                </a>
+            </div>
+            <a href="#" class="more">더보기</a>
+        </section>
+        <!-- 섹션 앨범&노래 -->
+
+        <section id="brand">
+            <hgroup>
+                <h2>세계 제일을 꿈꾸며, 만들다</h2>
+                <p>fender brand story</p>
+            </hgroup>
+            <div id="brandInner">
+                <dl class="brandCard brandOn">
+                    <dt>단 하나의 기타로 변신하는 음악</dt>
+                    <dd>transforming music one guitar at a time</dd>
+                    <dd>
+                        기타의 변신은 트랜드와 시대의 흐름<br>
+                        항상 새로운 도전을 목표로 <br>
+                        시대의 트랜드에 맞추어 변화하는 <br>
+                        펜더 기타로 풍부해지는 음악의 새로움을 느껴보세요.
+                    </dd>
+                </dl>
+                <dl class="brandCard">
+                    <dt>자유로운 음악의 날개를 달다</dt>
+                    <dd>put on the wings of free music</dd>
+                    <dd>
+                        "아티스트들은 천사와 같으며, <br> 그들이 날 수 있도록
+                        날개를 달아주는 것이 우리가 할 일이다" <br>
+                        모토를 항상 마음에 품고 <br>
+                        자유로운 날개를 달 수 있도록 노력합니다.
+                    </dd>
+                </dl>
+                <dl class="brandCard">
+                    <dt>섬세함을 지키는 아름다움</dt>
+                    <dd>the beauty of keeping delicate</dd>
+                    <dd>하나하나 열정과 진심을 담아 <br>
+                        모든 것이 작품이 될 수 있도록 <br>
+                        섬세하며 아름다움을 지키는 세계제일의 <br>
+                        기타장인의 마음을 담아 초심을 지킵니다.
+                    </dd>
+                </dl>
+            </div>
+            <a href="#" class="more">더보기</a>
+        </section>
+        <!-- 섹션 브랜드 카드 -->
+
+        <section id="news">
+            <hgroup>
+                <h2>펜더의 아름다운 새소식</h2>
+                <p>fender brand news</p>
+            </hgroup>
+            <div id="newsGrid" class="one">
+                <!-- ::before -->
+                <div class="newsGridInner">
+                    <dl class="on">
+                        <dt>
+                            introducing the fender <br>
+                            next class of 2024
+                        </dt>
+                        <dd>
+                            펜더 넥스트에 합류하는 여섯 번째 아티스트 클래스를 발표합니다. <br>
+                            지난 6년 동안 기타 산업과 아티스트들이 발전하듯, 펜더 역시 변화하는 음악가들의 <br>
+                            흐름에 맞추어 변화하고 적응해 왔습니다. <br>
+                            우리는 떠오르는 인재들을 지원하며 그들이 만들어내는 다양하고 획기적인 음악을 <br>
+                            기념하는 시대의 음악을 이어갑니다.
+                        </dd>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            킹피시와 버디가이가 출연하는 인그램
+                        </dt>
+                        <dd>
+                            세대별 블르수의 전설들이 만나다 <br>
+                            87세의 아티스트 버디가이와 25세 킹피시의 전통 블루스를 향한 만남은<br>
+                            스트라토캐스터의 70주년을 기념하며 새로운 역사를 만들어갑니다.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            fender next 23 <br>
+                            기타세계를 확장하는 25명의 아티스트
+                        </dt>
+                        <dd>
+                            Fender Next 23 클래스에는 장르, 세대, 성별, 배경을 <br>
+                            뛰어넘는 전세계의 아름다운 신인 아티스트 25명이 포함되어 있으며,<br>
+                            야심찬 뮤지션과 A&R 공개 모집을 통해 800개 이상의 작품을 걸쳐 <br>
+                            Fender의 최고의 아티스트<br>
+                            음악의 미래를 대표하는 2023년 25명의 명단을 선정했습니다.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <a href="#">자세히보기</a>
+            <a href="#">더보기</a>
+            <ul id="newsGridBtn">
+                <li class="btnOn">버튼1</li>
+                <li>버튼2</li>
+                <li>버튼3</li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer">
+        <ul id="fnb">
+            <li class="fnbList"><a href="#">기타</a>
+                <ul>
+                    <li><a href="#">전체보기</a></li>
+                    <li><a href="#">한정판 제품</a></li>
+                    <li><a href="#">스트라토캐스터</a></li>
+                    <li><a href="#">텔레캐스터</a></li>
+                    <li><a href="#">재즈마스터</a></li>
+                    <li><a href="#">어쿠스틱기타</a></li>
+                </ul>
+            </li>
+            <li class="fnbList"><a href="#">베이스</a>
+                <ul>
+                    <li><a href="#">전체보기</a></li>
+                    <li><a href="#">한정판 제품</a></li>
+                    <li><a href="#">재즈베이스</a></li>
+                    <li><a href="#">재규어베이스</a></li>
+                    <li><a href="#">머스탱베이스</a></li>
+                </ul>
+            </li>
+            <li class="fnbList"><a href="#">앰프/오디오</a>
+                <ul>
+                    <li><a href="#">전체보기</a></li>
+                    <li><a href="#">기타앰프</a></li>
+                    <li><a href="#">베이스앰프</a></li>
+                    <li><a href="#">이펙터</a></li>
+                </ul>
+            </li>
+            <li class="fnbList"><a href="#">액세서리</a>
+                <ul>
+                    <li><a href="#">전체보기</a></li>
+                    <li><a href="#">케이스</a></li>
+                    <li><a href="#">피크</a></li>
+                    <li><a href="#">스탠드</a></li>
+                </ul>
+            </li>
+            <li class="fnbList"><a href="#">아티스트</a>
+                <ul>
+                    <li><a href="#">아티스트</a></li>
+                    <li><a href="#">youtube</a></li>
+                </ul>
+            </li>
+            <li class="fnbList"><a href="#">브랜드</a>
+                <ul>
+                    <li><a href="#">펜더소개</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">채용</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="footerInner">
+            <dl>
+                <dt class="hidden">주소</dt>
+                <dd>080-7690-4493</dd>
+                <dd>오전 9시 ~ 오후 6시 (일요일, 공휴일 휴무)</dd>
+            </dl>
+            <a href="#">문의하기</a>
+            <a href="#">자주하는 질문</a>
+            <small>
+                copyright 2024. fender musical instruments corporation.
+                <br>
+                all rights reserved.
+            </small>
+        </div>
+    </footer>
+
+    <script src="./js/common.js"></script>
+    <script>
+        $('#brandInner dl').mouseenter(function () {
+            $(this).removeClass('brandOff').addClass('brandOn')
+        })
+        $('#brandInner dl').mouseleave(function () {
+            $(this).removeClass('brandOn').addClass('brandOff')
+        })
+        // 슬라이드
+        let slideNum = 9.3750;
+        $('#shopList li a:eq(0)').mouseenter(function (e) {
+            e.preventDefault();
+            $('#slideLineInner').css({
+                left: slideNum * 0 + 'vw'
+            })
+        })
+        $('#shopList li a:eq(1)').mouseenter(function (e) {
+            e.preventDefault();
+            $('#slideLineInner').css({
+                left: slideNum * 1 + 'vw'
+            })
+        })
+        $('#shopList li a:eq(2)').mouseenter(function (e) {
+            e.preventDefault();
+            $('#slideLineInner').css({
+                left: slideNum * 2 + 'vw'
+            })
+        })
+        $('#shopList li a:eq(3)').mouseenter(function (e) {
+            e.preventDefault();
+            $('#slideLineInner').css({
+                left: slideNum * 3 + 'vw'
+            })
+        })
+        $('#shopList li a:eq(4)').mouseenter(function (e) {
+            e.preventDefault();
+            $('#slideLineInner').css({
+                left: slideNum * 4 + 'vw'
+            })
+        })
+        $('#shopList li a:eq(5)').mouseenter(function (e) {
+            e.preventDefault();
+            $('#slideLineInner').css({
+                left: slideNum * 5 + 'vw'
+            })
+        })
+        $('#shopList li a:eq(6)').mouseenter(function (e) {
+            e.preventDefault();
+            $('#slideLineInner').css({
+                left: slideNum * 6 + 'vw'
+            })
+        })
+        $('#shopList li a:eq(7)').mouseenter(function (e) {
+            e.preventDefault();
+            $('#slideLineInner').css({
+                left: slideNum * 7 + 'vw'
+            })
+        })
+        // 뉴스섹션
+        // $('#newsGridBtn li:eq(0)').click(function (e) {
+        //     e.preventDefault();
+        //     $(this).addClass('btnOn');
+        //     $(`#newsGridBtn li:eq(1)`).removeClass('btnOn');
+        //     $(`#newsGridBtn li:eq(2)`).removeClass('btnOn');
+        //     $('.newsGridInner dl:eq(0)').addClass('on');
+        //     $('.newsGridInner dl:eq(1)').removeClass('on');
+        //     $('.newsGridInner dl:eq(2)').removeClass('on');
+        //     $('.newsGridInner dl:eq(0)').data('imgsrc')
+        //     $(`#newsGrid`).removeClass()
+        //     $(`#newsGrid`).addClass('one')
+        // })
+        // $('#newsGridBtn li:eq(1)').click(function (e) {
+        //     e.preventDefault();
+        //     $(this).addClass('btnOn');
+        //     $(`#newsGridBtn li:eq(0)`).removeClass('btnOn');
+        //     $(`#newsGridBtn li:eq(2)`).removeClass('btnOn');
+        //     $('.newsGridInner dl:eq(1)').addClass('on');
+        //     $('.newsGridInner dl:eq(0)').removeClass('on');
+        //     $('.newsGridInner dl:eq(2)').removeClass('on');
+        //     $('.newsGridInner dl:eq(1)').data('imgsrc')
+        //     $(`#newsGrid`).removeClass()
+        //     $(`#newsGrid`).addClass('two')
+
+
+        // })
+        // $('#newsGridBtn li:eq(2)').click(function (e) {
+        //     e.preventDefault();
+        //     $(this).addClass('btnOn');
+        //     $(`#newsGridBtn li:eq(1)`).removeClass('btnOn');
+        //     $(`#newsGridBtn li:eq(0)`).removeClass('btnOn');
+        //     $('.newsGridInner dl:eq(2)').addClass('on');
+        //     $('.newsGridInner dl:eq(1)').removeClass('on');
+        //     $('.newsGridInner dl:eq(0)').removeClass('on');
+        //     $(`#newsGrid`).removeClass()
+        //     $('#newsGrid').addClass('three')
+        // })
+
+        $('#newsGridBtn li').click(function (e) {
+            e.preventDefault();
+            let curIndex = $(this).index();
+            let indexName;
+            $(`#newsGrid`).removeClass();
+            switch (curIndex) {
+                case 0: indexName = 'one'; break;
+                case 1: indexName = 'two'; break;
+                case 2: indexName = 'three'; break;
+            }
+            $('#newsGrid').addClass(`${indexName}`)
+            for (let i = 0; i < 3; i++) {
+                $(`#newsGridBtn li:eq(${i})`).removeClass('btnOn');
+                $(`.newsGridInner dl:eq(${i})`).removeClass('on');
+                if (i == curIndex) {
+                    $(`#newsGridBtn li:eq(${i})`).addClass('btnOn');
+                    $(`.newsGridInner dl:eq(${i})`).addClass('on');
+                }
+            }
+        })
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+/* 폰트 */
+/* 애플산스 웹폰트 링크..? */
+/* 강조 굵기 NeoEB00 , 서브강조 NeoB00 */
+@font-face {
+    font-family: 'AppleSDGothicNeoB00';
+    src: url(../font/AppleSDGothicNeoB.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AppleSDGothicNeoEB00';
+    src: url(../font/AppleSDGothicNeoEB.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+/* 기본폰트 NeoR00 */
+@font-face {
+    font-family: 'AppleSDGothicNeoR00';
+    src: url(../font/AppleSDGothicNeoR.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'AppleSDGothicNeoR00';
+}
+
+.card dt,
+.shopName a,
+#shopList a,
+#electric1 a dd:nth-of-type(1),
+#limitedBtn .limitedMore,
+#limitedBtn .buy,
+#limited hgroup h2,
+.limitedVideo dt,
+.more,
+#songWrap a dl>dt,
+#brandInner dt,
+.newsGridInner dt,
+.newsGridInner dd,
+#news a:nth-of-type(1),
+#news a:nth-of-type(2),
+#gnb a,
+#language a,
+#news hgroup h2,
+h2,
+.fnbList>a,
+#footerInner dt,
+#footerInner dd,
+#footerInner a {
+    font-family: 'AppleSDGothicNeoB00';
+}
+
+.newsGridInner dt {
+    font-family: 'AppleSDGothicNeoEB00';
+}

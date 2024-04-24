@@ -1,0 +1,1355 @@
+@charset "utf-8";
+@import url(./commom.css);
+@import url(./webfont.css);
+
+/* 헤더 */
+*{
+    box-sizing: border-box;
+}
+#header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* h1 로고 포지션 우측정렬 */
+#header h1 a {
+    display: block;
+    width: 16.334rem;
+    height: 6.248rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    background: url(../img/logo.png);
+    position: absolute;
+    top: 2rem;
+    left: 13rem;
+}
+
+/* snb 포지션 왼쪽정렬 */
+#snb {
+    position: absolute;
+    right: 13rem;
+    display: flex;
+}
+#snb>a{
+    width: 20.5rem;
+    height: 4rem;
+    background-color: #f5f2f2;
+    border-radius: 2rem;
+    margin-right: 2.5rem;
+    position: relative;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#snb>a::after{
+    content: '';
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url(../img/more_view.png) no-repeat center/cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+}
+#snb::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #191919;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 30px;
+}
+
+#language {
+    margin-top: 10px;
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1.8rem;
+    overflow: hidden;
+}
+
+/* gnb */
+#gnb{
+    position: absolute;
+    width: 850px;
+    height: 100px;
+    left: calc(50% - 850px/2);
+}
+#gnbInner{
+    display: flex;
+    justify-content: space-between;
+}
+#gnbInner>li>a{
+    display: block;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    width: 120px;
+    height: 98px;
+    text-align: center;
+    line-height: 100px;
+
+}
+.lnb{
+    text-align: center;
+    line-height: 42px;
+    font-size: 1.8rem;
+}
+/* 메인섹션 */
+#banner{
+    width: 100%; 
+    overflow: hidden;    
+    color: #fff;
+    font-size: 50px;
+}
+#bannerInner { width: 79%; margin: 0 auto; }
+/* #bannerInner { width: 1460px; margin: 0 auto; } */
+#bannerInner div{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+}
+.card{   
+    height: 418px;
+    border-radius: 30px;
+    background-color: #191919;
+    margin: 0 30px;
+    transition: 1s height;
+}
+.slick-center { height: 450px }
+
+@media screen and (max-width: 768px) {
+    #bannerInner { width: 90%;  }
+
+}
+
+/* 여기부터 복사 */
+
+
+/* 메인 shop섹션 */
+#shop {
+    width: 100%;
+    margin-bottom: 13.0208vw;
+    position: relative;
+    padding: 0 11.9792vw;
+
+}
+
+#shop hgroup {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    margin-top: 5.7292vw;
+}
+
+#shop hgroup h2 {
+    font-size: 1.770833vw;
+    letter-spacing: 2px;
+}
+
+#shop hgroup p {
+    font-size: 0.9375vw;
+    color: #404040;
+    text-transform: uppercase;
+    margin-bottom: 0.2083vw;
+}
+
+/* 리스트 */
+#shopList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25vw;
+    text-align: center;
+    margin-top: 3.4722vw;
+}
+
+#shopList li:nth-of-type(1) a::before {
+    margin-bottom: 1.1111vw;
+    content: '';
+    display: block;
+    width: 9.0278vw;
+    height: 9.0278vw;
+    background: url(../img/shopList1.png) no-repeat center 80%/cover;
+    background-size: 70%;
+}
+
+#shopList li:nth-of-type(2) a::before {
+    content: '';
+    display: block;
+    width: 9.0278vw;
+    height: 9.0278vw;
+    background: url(../img/shopList2.png) no-repeat center 80%/cover;
+    background-size: 70%;
+    margin-bottom: 1.1111vw;
+}
+
+#shopList li:nth-of-type(3) a::before {
+    content: '';
+    display: block;
+    width: 9.0278vw;
+    height: 9.0278vw;
+    background: url(../img/shopList3.png) no-repeat center/cover;
+    background-size: 70%;
+    margin-bottom: 1.1111vw;
+}
+
+#shopList li:nth-of-type(4) a::before {
+    content: '';
+    display: block;
+    width: 9.0278vw;
+    height: 9.0278vw;
+    background: url(../img/shopList4.png) no-repeat center 75%/cover;
+    background-size: 45%;
+    margin-bottom: 1.1111vw;
+}
+
+#shopList li:nth-of-type(5) a::before {
+    content: '';
+    display: block;
+    width: 9.0278vw;
+    height: 9.0278vw;
+    background: url(../img/shopList5.png) no-repeat center 70%/cover;
+    background-size: 50%;
+    margin-bottom: 1.1111vw;
+}
+
+#shopList li:nth-of-type(6) a::before {
+    content: '';
+    display: block;
+    width: 9.0278vw;
+    height: 9.0278vw;
+    background: url(../img/shopList6.png) no-repeat center 80%/cover;
+    background-size: 60%;
+    margin-bottom: 1.1111vw;
+}
+
+#shopList li:nth-of-type(7) a::before {
+    content: '';
+    display: block;
+    width: 9.0278vw;
+    height: 9.0278vw;
+    background: url(../img/shopList7.png) no-repeat center 70%/cover;
+    background-size: 28%;
+    margin-bottom: 1.1111vw;
+}
+
+#shopList li:nth-of-type(8) a::before {
+    content: '';
+    display: block;
+    width: 9.0278vw;
+    height: 9.0278vw;
+    background: url(../img/shopList8.png) no-repeat center 70%/cover;
+    background-size: 50%;
+    margin-bottom: 1.1111vw;
+}
+
+/* 리스트라인 */
+#slideLine {
+    width: 76vw;
+    height: 0.2778vw;
+    background-color: #eee;
+    margin: 1.6667vw auto 6.9444vw;
+    border-radius: 6.9444vw;
+}
+
+#slideLineInner {
+    width: calc(100% / 8);
+    height: 0.2778vw;
+    background-color: #191919;
+    border-radius: 6.9444vw;
+}
+
+/* 끝없는 고통,,,레쓰고,,, 고난의 시작 카드섹션,,, /@3m~ <:3m~ >((@3 */
+#shopCard {
+    display: flex;
+    flex-flow: row wrap;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* column-gap: 1.75vw; */
+    row-gap: 7.8125vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 7.8125vw;
+}
+
+#shopCard dd img {
+    background-color: #f9f9f9;
+    border-radius: 1.041667vw;
+    width: 16.6667vw;
+    margin-bottom: 1.25vw;
+
+}
+
+.shopPrice {
+    font-size: 0.9722vw;
+    color: #404040;
+    order: 2;
+    margin-left: 0.4167vw;
+}
+
+.shopName a {
+    display: block;
+    font-size: 1.0417vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#shopCard li dl {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+#shopCard dt {
+    order: 1;
+    margin: 0 0 0.5556vw 0.4167vw;
+}
+
+.shopPr1>dl dd:nth-of-type(3) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    background: url(../img/color1.png) no-repeat center/cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2.7778vw;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+
+.shopPr1>dl dd:nth-of-type(4) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    background: url(../img/color2.png) no-repeat center/cover;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 2.3958vw;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr1>dl dd:nth-of-type(5) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    background: url(../img/color3.png) no-repeat center/cover;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 4.7917vw;
+    border: 0.0781vw solid #C2C2C2;
+}
+.shopPr2>dl dd:nth-of-type(3) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2.7778vw;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #070301;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+
+.shopPr2>dl dd:nth-of-type(4) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 2.3958vw;
+    background: #ECEAE5;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr2>dl dd:nth-of-type(5) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 4.7917vw;
+    background: #001357;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr2>dl dd:nth-of-type(6) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 7.1875vw;
+    background: #E97900;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr3>dl dd:nth-of-type(3) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2.7778vw;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #7B011A;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+
+.shopPr3>dl dd:nth-of-type(4) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 2.3958vw;
+    background: #E18500;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr3>dl dd:nth-of-type(5) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 4.7917vw;
+    background: #F9D267;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr3>dl dd:nth-of-type(6) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 7.1875vw;
+    background: #1D6E7C;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr3>dl dd:nth-of-type(7) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 9.5833vw;
+    background: #BED9C8;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr4>dl dd:nth-of-type(3) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2.7778vw;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #406C8D;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+
+.shopPr4>dl dd:nth-of-type(4) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 2.3958vw;
+    background: #560000;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr4>dl dd:nth-of-type(5) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 4.7917vw;
+    background:url(../img/color4.png) no-repeat center/cover;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr5>dl dd:nth-of-type(3) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2.7778vw;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #A4D3B1;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+
+.shopPr5>dl dd:nth-of-type(4) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 2.3958vw;
+    background: #600000;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr5>dl dd:nth-of-type(5) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2.7778vw;
+    left: 4.7917vw;
+    background: #9B1623;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr6>dl dd:nth-of-type(3) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2.7778vw;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: url(../img/color_jimmy.png) no-repeat center/cover;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr7>dl dd:nth-of-type(3) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2.7778vw;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #EAE6DD;
+    border: 0.0781vw solid #C2C2C2;
+}
+
+.shopPr8>dl dd:nth-of-type(3) {
+    width: 1.6667vw;
+    height: 1.6667vw;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2.7778vw;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #F0DCB7;
+    border: 0.0781vw solid #C2C2C2;
+}
+/* ?????? flex container에 column nowrap */
+
+/* 메인 guitarBody섹션 */
+#guitarBody {
+    width: 100%;
+    margin-bottom: 13.0208vw;
+    position: relative;
+}
+
+#guitarBody hgroup {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    margin-top: 5.7292vw;
+}
+
+#guitarBody hgroup h2 {
+    font-size: 1.770833vw;
+    letter-spacing: 2px;
+}
+
+#guitarBody hgroup p {
+    font-size: 0.9375vw;
+    color: #404040;
+    text-transform: uppercase;
+    margin-bottom: 0.2083vw;
+}
+
+/* 선택btn */
+#guitarBody ul {
+    display: flex;
+    justify-content: space-between;
+    width: 26vw;
+    height: 2.3438vw;
+    margin: 1.5625vw auto 2.3958vw;
+}
+
+#guitarBody li>a {
+    display: block;
+    font-size: 0.8333vw;
+    line-height: 2.3438vw;
+    text-align: center;
+    color: #404040;
+    border-radius: 2.6042vw;
+    border: 1px solid #ccc;
+    width: 5.7292vw;
+    height: 2.3438vw;
+}
+
+#guitarBody li:nth-of-type(1)>a {
+    color: white;
+    background-color: #191919;
+    border: 0px;
+}
+
+#electric1 {
+    position: absolute;
+    display: flex;
+    gap: 1.6667vw;
+    left: 50%;
+    top: 10.4167vw;
+    transform: translateX(-50%);
+}
+
+#electric1 a {
+    display: block;
+    width: 24.2188vw;
+    height: 28.6458vw;
+    border-radius: 1.0417vw;
+    padding: 2.0833vw;
+    transition: 0.3s;
+}
+
+#electric1 a:nth-of-type(1) {
+    background: url(../img/body2.png) no-repeat center/cover;
+}
+
+#electric1 a:nth-of-type(2) {
+    background: url(../img/body3.png) no-repeat center/cover;
+}
+
+#electric1 a:nth-of-type(3) {
+    background: url(../img/body1.png) no-repeat center/cover;
+}
+
+#electric1 a dt {
+    color: white;
+    font-size: 1.0938vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#electric1 a dd:nth-of-type(1) {
+    color: white;
+    font-size: 1.9792vw;
+}
+
+#electric1 a dd:nth-of-type(2) {
+    color: white;
+    font-size: 1.25vw;
+    margin-top: 1.25vw;
+}
+
+#electric1 a:hover {
+    scale: 1.03;
+    box-shadow: 0 0 0.4167vw #191919;
+    text-shadow: 0 0 0.4167vw #191919;
+}
+
+/* 메인  limited섹션*/
+#limited {
+    width: 100%;
+    margin-bottom: 13.0208vw;
+    padding-top: 27.0833vw;
+}
+
+#limited hgroup {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    margin: 5.7292vw;
+}
+
+#limited hgroup h2 {
+    font-size: 1.770833vw;
+    letter-spacing: 2px;
+}
+
+#limited hgroup p {
+    font-size: 0.9375vw;
+    color: #404040;
+    text-transform: uppercase;
+    margin-bottom: 0.2083vw;
+}
+
+/* 비디오 테스트 HTML 문서 div 이미지 확인용 추후 youtube 링크 달아오기 태그 바꾸기*/
+#limited #videoTest {
+    background: url(../img/video_img.png) no-repeat center/cover;
+    width: 60.4167vw;
+    height: 27.0833vw;
+    margin: 0 auto;
+    border-radius: 1.0417vw;
+    position: relative;
+}
+
+#limited #videoTest::after {
+    content: '';
+    display: block;
+    background: url(../img/video_btn.png) no-repeat center/cover;
+    position: absolute;
+    width: 4.7917vw;
+    height: 4.7917vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.limitedVideo {
+    text-align: center;
+    margin-top: 2.6042vw;
+}
+
+.limitedVideo dt {
+    font-size: 1.8750vw;
+    text-transform: uppercase;
+    margin-bottom: 1.2500vw;
+}
+
+.limitedVideo dd {
+    font-size: 1.2500vw;
+    line-height: 1.5;
+    margin-bottom: 4.1667vw;
+}
+
+/* 버튼 */
+#limitedBtn {
+    width: 22.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#limitedBtn .buy {
+    width: 9.3750vw;
+    height: 3.5417vw;
+    background-color: #191919;
+    text-align: center;
+    color: white;
+    line-height: 3.5417vw;
+    font-size: 0.9375vw;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+#limitedBtn .limitedMore {
+    width: 9.3750vw;
+    height: 3.5417vw;
+    text-align: center;
+    line-height: 3.5417vw;
+    border: 1px solid #ccc;
+    font-size: 0.9375vw;
+    border-radius: 2.6042vw;
+    display: inline-block;
+
+}
+
+/* 메인 artist섹션 /@3m~ 아기코끼리 뿌우~*/
+#artist {
+    width: 100%;
+    margin-bottom: 13.0208vw;
+}
+
+#artist hgroup {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    margin: 5.7292vw;
+}
+
+#artist hgroup h2 {
+    font-size: 1.770833vw;
+    letter-spacing: 2px;
+}
+
+#artist hgroup p {
+    font-size: 0.9375vw;
+    color: #404040;
+    text-transform: uppercase;
+    margin-bottom: 0.2083vw;
+}
+
+/* 카드grid */
+#artistGrid {
+    width: 100%;
+    height: 35.4167vw;
+    padding: 0 11.9792vw;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.0417vw;
+}
+
+/* hover효과 스크립트 예시 - 스크립트로 자세히 짠 후 삭제 */
+#artistGrid div:hover {
+    filter: grayscale(1);
+}
+
+#artistGrid a:hover dt {
+    opacity: 1;
+    transition: 1.2s;
+}
+
+/* 삭제 필요 */
+#artistGrid div {
+    border-radius: 1.0417vw;
+    filter: grayscale(0);
+}
+
+#artistGrid div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.0417vw;
+    padding: 2.0833vw;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.8s;
+}
+
+#artistGrid div a dt {
+    font-size: 2.3958vw;
+    color: white;
+    opacity: 0;
+}
+
+#artistGrid div a dd {
+    font-size: 1.2500vw;
+    color: white;
+    opacity: 0;
+}
+
+#artistGrid div:nth-of-type(1) {
+    background: url(../img/artist1.jpg) no-repeat 70% center/cover;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+#artistGrid div:nth-of-type(2) {
+    background: url(../img/artist2.jpg) no-repeat center/cover;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#artistGrid div:nth-of-type(3) {
+    background: url(../img/artist3.jpg) no-repeat center/cover;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#artistGrid div:nth-of-type(4) {
+    background: url(../img/artist4.jpg) no-repeat center/cover;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#artistGrid div:nth-of-type(5) {
+    background: url(../img/artist5.jpg) no-repeat center/cover;
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+/* 아티스트 btn */
+#artist .more {
+    margin-top: 5.2083vw;
+}
+
+/* 메인 song섹션 */
+/* 대가리 <:3m~~ 찍찍 ~ */
+#song {
+    width: 100%;
+    margin-bottom: 13.0208vw;
+}
+
+#song hgroup {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    margin: 5.7292vw;
+}
+
+#song hgroup h2 {
+    font-size: 1.770833vw;
+    letter-spacing: 2px;
+}
+
+#song hgroup p {
+    font-size: 0.9375vw;
+    color: #404040;
+    text-transform: uppercase;
+    margin-bottom: 0.2083vw;
+}
+
+/* song grid */
+#songWrap {
+    padding: 0 11.9792vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3.1250vw;
+}
+
+#songWrap dl {
+    text-align: center;
+}
+
+#songWrap a {
+    display: block;
+    width: 88%;
+    position: relative;
+}
+
+#songWrap a dl>dt {
+    font-size: 1.25vw;
+    margin: 1.0417vw 0 0.4167vw 0;
+    text-transform: uppercase;
+}
+
+#songWrap a dl>dd {
+    font-size: 0.9375vw;
+    text-transform: capitalize;
+    color: #404040;
+    position: absolute;
+    bottom: -1.0417vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#songWrap a:nth-of-type(1):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song1.jpg) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#songWrap a:nth-of-type(2):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song2.jpg) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#songWrap a:nth-of-type(3):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song3.png) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#songWrap a:nth-of-type(4):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song4.webp) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#songWrap a:nth-of-type(5):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song5.webp) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#songWrap a:nth-of-type(6):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song5.webp) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#songWrap a:nth-of-type(7):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song4.webp) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#songWrap a:nth-of-type(8):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song3.png) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#songWrap a:nth-of-type(9):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song2.jpg) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#songWrap a:nth-of-type(10):before {
+    content: '';
+    display: block;
+    width: 13.0208vw;
+    height: 13.0208vw;
+    background: url(../img/song1.jpg) no-repeat center/cover;
+    border-radius: 1.0417vw;
+}
+
+#song .more {
+    margin-top: 5.2083vw;
+}
+
+/* 메인 brand섹션 */
+/* 제목  */
+#brand {
+    width: 100%;
+    margin-bottom: 13.0208vw;
+}
+
+#brand hgroup {
+    text-align: center;
+    display: flex;
+    flex-flow: column-reverse;
+
+}
+
+#brand hgroup h2 {
+    font-size: 1.770833vw;
+    letter-spacing: 2px;
+}
+
+#brand hgroup p {
+    font-size: 0.9375vw;
+    color: #404040;
+    text-transform: uppercase;
+    margin-bottom: 0.2083vw;
+}
+
+/* 카드 */
+#brandInner {
+    margin: 5.7292vw 0 5.2083vw 0;
+    padding: 0 11.9792vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#brandInner dl {
+    height: 28.6458vw;
+    padding: 2.6042vw;
+}
+
+#brandInner dt {
+    font-size: 2.1875vw;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 0.6250vw;
+}
+
+#brandInner dd {
+    font-size: 1.0938vw;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* btn */
+.more {
+    width: 9.3750vw;
+    height: 3.5417vw;
+    display: inline-block;
+    text-align: center;
+    line-height: 3.5417vw;
+    border: 1px solid #ccc;
+    font-size: 0.9375vw;
+    border-radius: 2.6042vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 카드 on off 기능 grid 크기 증가식 */
+#brandInner dl:nth-of-type(1) {
+    background: url(../img/brand1.jpg) no-repeat center/cover;
+    filter: grayscale(0);
+    border-radius: 1.0417vw 0 0 1.0417vw;
+}
+
+#brandInner dl:nth-of-type(2) {
+    background: url(../img/brand2.jpg) no-repeat center/cover;
+    filter: grayscale(1);
+}
+
+#brandInner dl:nth-of-type(3) {
+    background: url(../img/brand3.png) no-repeat center/cover;
+    filter: grayscale(1);
+    border-radius: 0 1.0417vw 1.0417vw 0;
+
+}
+
+#brandInner dl.brandOn {
+    grid-column: 1 / 4;
+    /* box-shadow: 10px 0px 15px black; */
+    z-index: 99;
+}
+
+.brandOff>dd,
+.brandOff>dt {
+    opacity: 0;
+}
+
+/* 메인 news섹션 */
+#news {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#news hgroup {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+#news hgroup h2 {
+    /* font-size: 46px; */
+    font-size: 1.770833vw;
+    letter-spacing: 2px;
+
+}
+
+#news hgroup p {
+    font-size: 0.9375vw;
+    color: #404040;
+    text-transform: uppercase;
+    margin-bottom: 0.2083vw;
+}
+
+
+#newsGrid::before {
+    content: '';
+    display: block;
+    width: 35.4167vw;
+    height: 31.2500vw;
+    border-radius: 1.0417vw;
+    background: url(../img/news1.jpg) no-repeat center/cover;
+}
+
+.newsGridInner dl {
+    position: absolute;
+    text-align: left;
+}
+
+.newsGridInner dt {
+    text-transform: uppercase;
+    font-size: 1.7708vw;
+    margin-bottom: 1.0417vw;
+    letter-spacing: 0.0521vw;
+}
+
+.newsGridInner dd {
+    font-size: 0.9375vw;
+    font-size: 1.0938vw;
+    line-height: 1.8;
+    color: #191919;
+}
+
+.newsGridInner dl.off {
+    opacity: 0;
+}
+
+.newsGridInner::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#newsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 11.9792vw;
+    margin: 5.7292vw 0 17.7083vw 0;
+    gap: 7.2917vw;
+}
+
+#news a:nth-of-type(1) {
+    display: block;
+    width: 9.3750vw;
+    height: 3.5417vw;
+    display: inline-block;
+    background-color: #191919;
+    text-align: center;
+    color: white;
+    line-height: 3.5417vw;
+    font-size: 0.9375vw;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 6.2500vw;
+    left: 54.1667vw;
+}
+
+#news a:nth-of-type(2) {
+    display: block;
+    width: 9.3750vw;
+    height: 3.5417vw;
+    display: inline-block;
+    text-align: center;
+    line-height: 3.5417vw;
+    border: 1px solid #ccc;
+    font-size: 0.9375vw;
+    border-radius: 2.6042vw;
+    position: absolute;
+    bottom: 6.2500vw;
+    left: 64.5833vw;
+
+}
+
+/* footer */
+footer {
+    padding: 10vw 40px 0;
+    width: 100%;
+    height: 38vw;
+    background-color: #191919;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    color: white;
+    font-size: 1.2vw;
+}
+
+#footerInner::before {
+    content: '';
+    display: block;
+    background: url(../img/fnb_logo.png) no-repeat center/cover;
+    width: 12vw;
+    height: 4.6vw;
+    position: absolute;
+    top: 10vw;
+    left: 5vw;
+}
+
+#footerInner {
+    order: 2;
+    width: 30%;
+    padding-top: 6vw;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+#footerInner a {
+    display: inline-block;
+    color: #ccc;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    margin-right: 1vw;
+}
+
+#footerInner small {
+    display: block;
+    margin-top: 1.0417vw;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+#fnb {
+    order: 3;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.fnbList>a {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: #ccc;
+}
+
+.fnbList>ul>li>a {
+    line-height: 1.8;
+    color: #ccc;
+}
