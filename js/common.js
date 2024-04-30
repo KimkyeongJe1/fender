@@ -27,3 +27,11 @@ $('#bannerInner > div').slick({
     }
   ]
 });
+$(window).on('resize', function() {
+  $(".card").css({ transition: '0s' })
+})
+$('#bannerInner > div').on('mousedown', function() {
+  $(this).on('mousemove', function() {
+    $(".card").css({ transition: '0.6s' })
+  })
+})

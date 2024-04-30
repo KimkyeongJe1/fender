@@ -10,103 +10,200 @@
 #header {
     width: 100%;
     height: 5.2083vw;
-    margin-bottom: 4.1667vw;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-    overflow: hidden;
-}
-
-/* 로고 */
-#header h1 {
+    /* height: 100px; */
     position: absolute;
-    top: 0.9375vw;
-    left: 6.7708vw;
+    overflow: hidden;
+    /* transition: 0.6s; */
 }
 
 #header h1 a {
     display: block;
-    background: url(../img/logo.png) no-repeat center/cover;
-    width: 164px;
     width: 8.5417vw;
-    height: 62.73px;
-    height: 3.2672vw;
+    height: 3.2813vw;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    position: absolute;
+    top: 0.9896vw;
+    left: 6.5104vw;
+    background: url(../img/logo.png) no-repeat center/cover;
+    z-index: 100;
 }
 
-/* gnb */
-#header nav>ul {
+#header #gnb {
+    width: 100%;
+    padding: 0 28.7500vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+#header #gnb>ul {
     display: flex;
+}
+
+#header #gnb>ul>li {
+    text-align: center;
+    width: 7.0833vw;
+}
+
+#header #gnb>ul>li>a {
+    display: block;
+    width: 7.0833vw;
+    height: 5.2083vw;
+    font-size: 1.0417vw;
+    text-align: center;
+    line-height: 5.2083vw;
     position: relative;
+}
+
+#header #gnb>ul>li>a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 0.1849vw;
+    position: absolute;
+    left: 50%;
+    bottom: 0.8vw;
+    background-color: #191919;
+    border-radius: 2.6042vw;
+    transition: 0.3s;
+
+}
+
+#header #gnb>ul>li:hover>a::after {
+    width: 100%;
+    left: 0;
+}
+
+#header #gnb ul ul li {
+    width: 100%;
+    height: 3.1250vw;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-#header #gnb>#gnbInner>li {
-    width: 130px;
-    width: 6.7708vw;
+#header #gnb>ul>li:nth-of-type(1)>ul>li:nth-of-type(6) {
+    margin-bottom: 2.0833vw;
+}
+
+#header #gnb ul ul a {
+    display: block;
+    font-size: 0.9375vw;
     text-align: center;
-    height: 100px;
-    /* line-height: 100px; */
-    line-height: 5.5;
-}
-
-#header #gnb>#gnbInner>li>a {
-    display: block;
-    font-size: 18px;
+    width: fit-content;
+    height: fit-content;
     text-transform: uppercase;
+    position: relative;
 }
 
-/* snb */
-#snb {
-    display: flex;
-    position: absolute;
-    height: 60px;
-    right: 130px;
-    top: 30px;
-    top: 1.5625vw;
-    gap: 30px;
-}
-
-#snb>a {
+#header #gnb ul ul a::after {
+    content: '';
     display: block;
-    width: 180px;
-    height: 40px;
-    background: url(../img/more_view.png) no-repeat center/cover;
-    background-size: 18px;
-    background-position: 90%;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    border-radius: 20px;
+    width: 0%;
+    height: 0.1563vw;
+    background-color: #191919;
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transition: 0.2s;
+    border-radius: 2.6042vw;
+
+}
+
+#header #gnb ul ul a:hover::after {
+    left: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+#snb {
+    width: 13.5417vw;
+    height: 2.0833vw;
+    position: absolute;
+    right: 6.5104vw;
+    top: 1.5625vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* border: 0.0521vw solid red; */
+}
+
+#snb #moreBtn {
+    display: none;
+}
+
+#snb>input {
+    height: 2.0833vw;
+    width: 10.4167vw;
+    border-radius: 2.6042vw;
+    background-color: #F5F2F2;
+    font-size: 0.9375vw;
+    padding: 0 1.0417vw;
+    border: 0.0000vw solid black;
+    position: absolute;
+    padding: 0vw 2vw 0vw 1vw;
+}
+
+#snb::after {
+    content: '';
+    display: block;
+    width: 1.0938vw;
+    height: 1.0417vw;
+    background: url(../img/more_view.svg) no-repeat center/cover;
+    position: absolute;
+    right: 3.6458vw;
     background-color: #F5F2F2;
 }
 
-#snb>ul {
-    margin-top: 8px;
-    height: 30px;
+#language {
+    height: 2.0833vw;
+    display: block;
+    line-height: 1.0417vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* border: 0.0521vw solid blue; */
     overflow: hidden;
+    transition: 0.6s;
 }
 
-#snb>ul>li:nth-of-type(1)::after {
+#language a {
+    text-align: center;
+    font-size: 1.0417vw;
+    line-height: 2.0833vw;
+    display: block;
+    width: 2.0833vw;
+    position: relative;
+}
+
+#language li:nth-of-type(1) a::after {
     content: '';
     display: block;
-    width: 24px;
-    height: 4px;
-    border-radius: 50px;
+    width: 100%;
+    height: 0.2083vw;
     background-color: #191919;
+    position: absolute;
+    bottom: 0.0781vw;
+    border-radius: 2.6042vw;
 }
 
-#snb>ul>li>a {
-    display: block;
-    font-size: 18px;
+.moreBtnOn {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
 }
 
-/* 메인섹션 */
+
+/* ===메인섹션=== */
+/* 베너섹션 */
 #banner {
+    padding-top: 100px;
     width: 100%;
     overflow: hidden;
     color: #fff;
@@ -118,25 +215,21 @@
     margin: 0 auto;
 }
 
-/* #bannerInner { width: 1460px; margin: 0 auto; } */
 #bannerInner div {
     width: 100%;
-    /* height: 100%; */
-    /* height: 520px; */
-    height: 27.0833vw;
+    height: 29.1667vw;
     display: flex;
     align-items: center;
 
 }
 
 .card {
-    height: 29.027778vw;
-    height: 418px;
-    height: 21.7708vw;
+    /* height: 418px; */
+    height: 24vw;
     border-radius: 1.5625vw;
     margin: 0 2.0833vw;
     transition: 0.6s;
-    padding: 3.125000vw;
+    padding: 3.125vw;
     background: no-repeat center/cover;
 }
 
@@ -178,8 +271,8 @@
 }
 
 .slick-center .card {
-    height: 460px;
-    height: 23.9583vw;
+    height: 27.0833vw;
+
 }
 
 /* 메인 shop섹션 */
@@ -218,6 +311,10 @@
     font-size: 1.25vw;
     text-align: center;
     margin-top: 3.4722vw;
+}
+
+#shopList li a {
+    display: block;
 }
 
 #shopList li:nth-of-type(1) a::before {
@@ -294,16 +391,17 @@
 
 /* 리스트라인 */
 #slideLine {
-    width: 76vw;
+    width: 75vw;
     height: 0.2778vw;
     background-color: #eee;
     margin: 1.6667vw auto 6.9444vw;
     border-radius: 6.9444vw;
     position: relative;
+    overflow: hidden;
 }
 
 #slideLineInner {
-    width: calc(100% / 8);
+    width: calc(100% / 7.9);
     height: 0.2778vw;
     background-color: #191919;
     border-radius: 6.9444vw;
@@ -312,7 +410,7 @@
 }
 
 /* 끝없는 고통,,,레쓰고,,, 고난의 시작 카드섹션,,, /@3m~ <:3m~ >((@3 */
-#shopCard {
+.shopCard {
     display: flex;
     flex-flow: row wrap;
     /* display: grid; */
@@ -325,7 +423,7 @@
     margin-bottom: 7.8125vw;
 }
 
-#shopCard dd img {
+.shopCard dd img {
     background-color: #f9f9f9;
     border-radius: 1.041667vw;
     width: 16.6667vw;
@@ -347,13 +445,13 @@
     letter-spacing: 1px;
 }
 
-#shopCard li dl {
+.shopCard li dl {
     display: flex;
     flex-flow: column nowrap;
     position: relative;
 }
 
-#shopCard dt {
+.shopCard dt {
     order: 1;
     margin: 0 0 0.5556vw 0.4167vw;
 }
@@ -375,7 +473,6 @@
 .shopPr1>dl dd:nth-of-type(4) {
     width: 1.6667vw;
     height: 1.6667vw;
-    background: url(../img/color2.png) no-repeat center/cover;
     border-radius: 50%;
     text-indent: 100%;
     overflow: hidden;
@@ -384,12 +481,12 @@
     bottom: -2.7778vw;
     left: 2.3958vw;
     border: 0.0781vw solid #C2C2C2;
+    background-color: #F2E5CC;
 }
 
 .shopPr1>dl dd:nth-of-type(5) {
     width: 1.6667vw;
     height: 1.6667vw;
-    background: url(../img/color3.png) no-repeat center/cover;
     border-radius: 50%;
     text-indent: 100%;
     overflow: hidden;
@@ -398,6 +495,7 @@
     bottom: -2.7778vw;
     left: 4.7917vw;
     border: 0.0781vw solid #C2C2C2;
+    background-color: #DC5D56;
 }
 
 .shopPr2>dl dd:nth-of-type(3) {
@@ -456,6 +554,7 @@
     border: 0.0781vw solid #C2C2C2;
 }
 
+/* 세번째 컬러피커 */
 .shopPr3>dl dd:nth-of-type(3) {
     width: 1.6667vw;
     height: 1.6667vw;
@@ -465,7 +564,7 @@
     text-indent: 100%;
     overflow: hidden;
     white-space: nowrap;
-    background: #7B011A;
+    background: #1C2438;
     border: 0.0781vw solid #C2C2C2;
 }
 
@@ -480,7 +579,7 @@
     position: absolute;
     bottom: -2.7778vw;
     left: 2.3958vw;
-    background: #E18500;
+    background: #4CABCC;
     border: 0.0781vw solid #C2C2C2;
 }
 
@@ -494,7 +593,7 @@
     position: absolute;
     bottom: -2.7778vw;
     left: 4.7917vw;
-    background: #F9D267;
+    background: #8BAF8A;
     border: 0.0781vw solid #C2C2C2;
 }
 
@@ -508,7 +607,7 @@
     position: absolute;
     bottom: -2.7778vw;
     left: 7.1875vw;
-    background: #1D6E7C;
+    background: #7A352E;
     border: 0.0781vw solid #C2C2C2;
 }
 
@@ -522,10 +621,11 @@
     position: absolute;
     bottom: -2.7778vw;
     left: 9.5833vw;
-    background: #BED9C8;
+    background: #CB291E;
     border: 0.0781vw solid #C2C2C2;
 }
 
+/* 네번쨰 컬러피커 */
 .shopPr4>dl dd:nth-of-type(3) {
     width: 1.6667vw;
     height: 1.6667vw;
@@ -550,7 +650,7 @@
     position: absolute;
     bottom: -2.7778vw;
     left: 2.3958vw;
-    background: #560000;
+    background: url(../img/color5.png) no-repeat center/cover;
     border: 0.0781vw solid #C2C2C2;
 }
 
@@ -564,10 +664,11 @@
     position: absolute;
     bottom: -2.7778vw;
     left: 4.7917vw;
-    background: url(../img/color4.png) no-repeat center/cover;
+    background: url(../img/color6.png) no-repeat center/cover;
     border: 0.0781vw solid #C2C2C2;
 }
 
+/* 다섯번째 컬러피커 */
 .shopPr5>dl dd:nth-of-type(3) {
     width: 1.6667vw;
     height: 1.6667vw;
@@ -593,20 +694,6 @@
     bottom: -2.7778vw;
     left: 2.3958vw;
     background: #600000;
-    border: 0.0781vw solid #C2C2C2;
-}
-
-.shopPr5>dl dd:nth-of-type(5) {
-    width: 1.6667vw;
-    height: 1.6667vw;
-    border-radius: 50%;
-    text-indent: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: absolute;
-    bottom: -2.7778vw;
-    left: 4.7917vw;
-    background: #9B1623;
     border: 0.0781vw solid #C2C2C2;
 }
 
@@ -718,9 +805,106 @@
     width: 24.2188vw;
     height: 28.6458vw;
     border-radius: 1.0417vw;
-    padding: 2.0833vw;
-    /* transition: 0.3s; */
+    transition: 0.6s;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transition: 1s transform;
 }
+
+/* 카드돌아가는 효과 */
+#electric1 a>div {
+    border-radius: 1.0417vw;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#electric1 a>* {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24.2188vw;
+    height: 28.6458vw;
+    padding: 2.0833vw;
+    background: no-repeat center center;
+    backface-visibility: hidden;
+}
+
+#electric1 a>div>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 98;
+    border-radius: 1.0417vw;
+    margin: 0;
+    padding: 0;
+}
+
+#electric1 a:nth-of-type(1)>div::before {
+    content: '';
+    display: block;
+    width: 24.2188vw;
+    height: 28.6458vw;
+    background-color: rgb(24, 30, 66);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 99;
+    border-radius: 1.0417vw;
+}
+
+#electric1 a:nth-of-type(2)>div::before {
+    content: '';
+    display: block;
+    width: 24.2188vw;
+    height: 28.6458vw;
+    background-color: rgb(47, 47, 47);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 99;
+    border-radius: 1.0417vw;
+}
+
+#electric1 a:nth-of-type(3)>div::before {
+    content: '';
+    display: block;
+    width: 24.2188vw;
+    height: 28.6458vw;
+    background-color: rgb(38, 34, 41);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 99;
+    border-radius: 1.0417vw;
+}
+
+#electric1 a:nth-of-type(1):hover {
+    transform: rotateY(200deg);
+    box-shadow: 0 0 0.2604vw rgb(66, 66, 66);
+}
+
+#electric1 a:nth-of-type(2):hover {
+    transform: rotateY(180deg);
+    box-shadow: 0 0 0.2604vw rgb(66, 66, 66);
+}
+
+#electric1 a:nth-of-type(3):hover {
+    transform: rotateY(-200deg);
+    box-shadow: 0 0 0.2604vw rgb(66, 66, 66);
+}
+
+#electric1 {
+    perspective: 104.1667vw;
+}
+
+/* 효과 끝 */
 
 #electric1 a:nth-of-type(1) {
     background: url(../img/body2.png) no-repeat center/cover;
@@ -739,6 +923,8 @@
     font-size: 1.0938vw;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;
+    z-index: 99;
 }
 
 #electric1 a dd:nth-of-type(1) {
@@ -746,12 +932,16 @@
     font-size: 1.9792vw;
     line-height: 1.25;
     margin-top: 0.4167vw;
+    position: relative;
+    z-index: 99;
 }
 
 #electric1 a dd:nth-of-type(2) {
     color: white;
     font-size: 1.25vw;
     margin-top: 0.9375vw;
+    position: relative;
+    z-index: 99;
 }
 
 /* #electric1 a:hover {
@@ -786,26 +976,13 @@
     margin-bottom: 0.2083vw;
 }
 
-/* 비디오 테스트 HTML 문서 div 이미지 확인용 추후 youtube 링크 달아오기 태그 바꾸기*/
 #limited #videoTest {
-    background: url(../img/video_img.png) no-repeat center/cover;
+    display: block;
     width: 60.4167vw;
-    height: 27.0833vw;
+    height: 32vw;
     margin: 0 auto;
     border-radius: 1.0417vw;
     position: relative;
-}
-
-#limited #videoTest::after {
-    content: '';
-    display: block;
-    background: url(../img/video_btn.png) no-repeat center/cover;
-    position: absolute;
-    width: 4.7917vw;
-    height: 4.7917vw;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .limitedVideo {
@@ -900,6 +1077,35 @@
 #artistGrid div {
     border-radius: 1.0417vw;
     filter: grayscale(0);
+}
+
+#artistGrid div.artistOn {
+    /* filter: grayscale(1); */
+    scale: 1.025;
+    transition: 0.6s;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, black 60%, rgb(74, 74, 74));
+        opacity: 0.3;
+        border-radius: 1.0417vw;
+        box-shadow: 0 0 3px black;
+    }
+}
+
+#artistGrid div.artistOn a dd,
+#artistGrid div.artistOn a dt {
+    opacity: 1;
+    transition: 0.8s;
+    position: relative;
+    z-index: 99;
 }
 
 #artistGrid div a {
@@ -1184,13 +1390,13 @@
 
 /* 카드 on off 기능 grid 크기 증가식 */
 #brandInner dl:nth-of-type(1) {
-    background: url(../img/brand1.jpg) no-repeat center/cover;
     /* filter: grayscale(0); */
+    background: url(../img/brand2.jpg) no-repeat center/cover;
     border-radius: 1.0417vw 0 0 1.0417vw;
 }
 
 #brandInner dl:nth-of-type(2) {
-    background: url(../img/brand2.jpg) no-repeat center/cover;
+    background: url(../img/brand1.png) no-repeat center/cover;
 }
 
 #brandInner dl:nth-of-type(3) {
@@ -1199,11 +1405,7 @@
 
 }
 
-#brandInner .brandOff dt,
-#brandInner .brandOff dd {
-    opacity: 0;
-    transition: 0.4s;
-}
+
 
 .brandCard {
     flex: 1;
@@ -1222,10 +1424,10 @@
     text-shadow: 0 0 5px #000000;
 }
 
-.brandOn dt,
-.brandOn dd {
+.brandCard.brandOn dt,
+.brandCard.brandOn dd {
     opacity: 1;
-    transition: 1.2s;
+    transition: 1.2s 0.1s;
 }
 
 #brandInner dd:nth-of-type(2) {
@@ -1381,6 +1583,54 @@
     background-color: #191919;
 }
 
+/* 펜더플레이섹션 */
+#fenderPlay {
+    margin-top: 20vw;
+    width: 100%;
+    height: 29.1667vw;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    background: url(../img/playBg.jpg) no-repeat center/cover;
+    position: relative;
+}
+
+#fenderPlay p {
+    font-size: 2.7083vw;
+    padding-top: 10.4167vw;
+}
+
+#fenderPlay p::before {
+    content: '';
+    display: block;
+    width: 17.4479vw;
+    height: 3.8542vw;
+    background: url(../img/fenderPlayLogo.png) no-repeat center/cover;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 25%;
+}
+
+#fenderPlay a {
+    margin: 0 auto;
+    margin-top: 2.0833vw;
+    display: block;
+    width: 10.4167vw;
+    height: 3.9583vw;
+    font-size: 1.3542vw;
+    border: 0.0521vw solid white;
+    color: white;
+    border-radius: 2.6042vw;
+    line-height: 3.9583vw;
+}
+
+#fenderPlay a:hover {
+    background-color: white;
+    color: #191919;
+    transition: 0.3s;
+}
+
 /* footer */
 footer {
     padding: 10vw 2.0833vw 0;
@@ -1450,15 +1700,203 @@ footer {
 
 
 
+
 /* 반응형 */
 /* 1023 */
 
 @media all and (min-width:768px) and (max-width:1023px) {
 
+    /* 헤더 */
+    #header {
+        height: 28vw;
+        transition: 0s;
+    }
+
+    #header h1 a {
+        width: 28.35vw;
+        height: 10.38vw;
+        top: 4vw;
+        left: 6vw;
+        background: url(../img/Fender_guitars_logo.svg) no-repeat center/cover;
+    }
+
+    #header #gnb {
+        width: 86%;
+        padding: 0;
+        margin: 0 auto;
+        position: inherit;
+        top: 18vw;
+    }
+
+    #header #gnb>ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 4.2vw;
+    }
+
+    #header #gnb>ul>li {
+        width: fit-content;
+    }
+
+    #header #gnb>ul>li>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 3.2vw;
+        text-align: center;
+        line-height: 5.2083vw;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid blue; */
+    }
+
+    #header #gnb>ul>li>a::after {
+        display: none;
+    }
+
+    #header #gnb>ul>li:hover>a::after {
+        display: none;
+    }
+
+    #header #gnb ul ul li {
+        display: none;
+    }
+
+    #header #gnb>ul>li:nth-of-type(1)>ul>li:nth-of-type(6) {
+        display: none;
+    }
+
+    #header #gnb ul ul a {
+        display: none;
+    }
+
+    #header #gnb ul ul a::after {
+        display: none;
+    }
+
+    #header #gnb ul ul a:hover::after {
+        display: none;
+    }
+
+    #snb {
+        width: 46vw;
+        height: 6vw;
+        position: absolute;
+        right: 6.5vw;
+        top: 6.5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        /* border: 0.0521vw solid red; */
+    }
+
+    #snb #moreBtn {
+        display: none;
+    }
+
+    #snb>input {
+        height: 100%;
+        width: 100%;
+        border-radius: 5vw;
+        background-color: #F5F2F2;
+        font-size: 2.8vw;
+        padding: 3vw 4vw 3vw 8vw;
+        border: 0vw solid black;
+        position: absolute;
+    }
+
+    #snb::after {
+        content: '';
+        display: block;
+        width: 2.7345vw;
+        height: 2.6045vw;
+        background: url(../img/more_view.svg) no-repeat center/cover;
+        position: absolute;
+        left: 3.6458vw;
+        background-color: #F5F2F2;
+    }
+
+    #language {
+        display: none;
+    }
+
+    #language a {
+        text-align: center;
+        font-size: 1.0417vw;
+        line-height: 2.0833vw;
+        display: block;
+        width: 2.0833vw;
+        position: relative;
+    }
+
+    #language li:nth-of-type(1) a::after {
+        display: none;
+    }
+
+    /* 배너섹션 */
+    #banner {
+        padding-top: 25.2356vw;
+        /* 확인용 패딩값 */
+        width: 100%;
+        overflow: hidden;
+        color: #fff;
+        font-size: 2.916667vw;
+    }
+
+    #bannerInner {
+        width: 120vw;
+        margin: 0 auto;
+        margin-left: -10.6vw;
+    }
+
+    #bannerInner div {
+        width: 100%;
+        height: 60vw;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .card {
+        height: 42vw;
+        border-radius: 1.5625vw;
+        margin: 0 2.0833vw;
+        padding: 5.2vw;
+    }
+
+    .card dt {
+        font-size: 4.6vw;
+        line-height: 1.25;
+        margin-bottom: 1vw;
+    }
+
+    .card4 dt {
+        background: url(../img/banner4noLogo.png) no-repeat center/cover;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 34.8974vw;
+        height: 12.3167vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .card dd:nth-of-type(1) {
+        font-size: 3vw;
+        margin-top: 0.6250vw;
+        text-transform: uppercase;
+    }
+
+    .slick-center .card {
+        height: 48vw;
+    }
+
     /* 메인 shop섹션 */
     #shop {
         width: 100%;
         height: 166.0156vw;
+        margin-top: 8vw;
         margin-bottom: 9.7752vw;
         /* 마진값추후수정 */
         position: relative;
@@ -1588,7 +2026,7 @@ footer {
     }
 
     /* 샵카드 */
-    #shopCard {
+    .shopCard {
         display: grid;
         /* gap: 1.5640vw; */
         grid-template-columns: repeat(3, 1fr);
@@ -1604,7 +2042,7 @@ footer {
 
     }
 
-    #shopCard dd img {
+    .shopCard dd img {
         background-color: #f9f9f9;
         border-radius: 0.7820vw;
         width: 27.3438vw;
@@ -1625,7 +2063,7 @@ footer {
         letter-spacing: 0.0978vw;
     }
 
-    #shopCard dt {
+    .shopCard dt {
         order: 1;
         margin: 0 0 0.3910vw 0.2933vw;
     }
@@ -1868,19 +2306,6 @@ footer {
         border: 0.0978vw solid #C2C2C2;
     }
 
-    .shopPr5>dl dd:nth-of-type(5) {
-        width: 3.0303vw;
-        height: 3.0303vw;
-        border-radius: 50%;
-        text-indent: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        position: absolute;
-        bottom: -4.3011vw;
-        left: 8.9932vw;
-        background: #9B1623;
-        border: 0.0978vw solid #C2C2C2;
-    }
 
     .shopPr6>dl dd:nth-of-type(3) {
         width: 3.0303vw;
@@ -1946,7 +2371,6 @@ footer {
 
     #electric1 {
         width: 88.4vw;
-        ;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -1961,6 +2385,57 @@ footer {
         height: 36vw;
         border-radius: 1.9550vw;
         padding: 4vw;
+        transition: 0s;
+    }
+
+    #electric1 a>div {
+        display: none;
+    }
+
+    #electric1 a>* {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 4vw;
+        background: no-repeat center center;
+        backface-visibility: hidden;
+    }
+
+    #electric1 a>div>video {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(1)>div::before {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(2)>div::before {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(3)>div::before {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(1):hover {
+        transform: rotateY(0deg);
+        box-shadow: 0 0 0 rgb(66, 66, 66);
+    }
+
+    #electric1 a:nth-of-type(2):hover {
+        transform: rotateY(0deg);
+        box-shadow: 0 0 0 rgb(66, 66, 66);
+    }
+
+    #electric1 a:nth-of-type(3):hover {
+        transform: rotateY(0deg);
+        box-shadow: 0 0 0 rgb(66, 66, 66);
+    }
+
+    #electric1 {
+        perspective: 104.1667vw;
     }
 
     #electric1 a:nth-of-type(1):before {
@@ -1991,7 +2466,7 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        opacity: 0.15;
+        opacity: 0.2;
         z-index: 95;
     }
 
@@ -2071,10 +2546,6 @@ footer {
 
     }
 
-    #limited #videoTest::after {
-        width: 9.1887vw;
-        height: 9.1887vw;
-    }
 
     .limitedVideo {
         text-align: left;
@@ -2214,6 +2685,35 @@ footer {
         grid-column-end: 8;
         grid-row-start: 1;
         grid-row-end: 3;
+    }
+
+    #artistGrid div.artistOn {
+        /* filter: grayscale(1); */
+        scale: 1;
+        transition: 0s;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: none;
+            opacity: 0.3;
+            border-radius: 1.0417vw;
+            box-shadow: 0 0 0 black;
+        }
+    }
+
+    #artistGrid div.artistOn a dd,
+    #artistGrid div.artistOn a dt {
+        opacity: 0;
+        transition: 0s;
+        position: relative;
+        z-index: 99;
     }
 
     /* 아티스트 btn */
@@ -2385,7 +2885,8 @@ footer {
         padding: 4.4966vw;
         border-radius: 2.9326vw;
         position: relative;
-        transition: 0;
+        transition: 0s;
+        text-shadow: 0 0 0 black;
 
         &::before {
             content: '';
@@ -2409,11 +2910,10 @@ footer {
         position: relative;
         z-index: 99;
         transition: 0s;
-
     }
 
     #brandInner dd {
-        font-size: 1.7595vw;
+        font-size: 2.2vw;
         letter-spacing: 0.0978vw;
         position: relative;
         z-index: 99;
@@ -2422,7 +2922,9 @@ footer {
 
     #brandInner dd:nth-of-type(2) {
         padding-top: 1.5640vw;
-        font-size: 2.3460vw;
+        font-size: 2.8vw;
+        margin-top: 1.6618vw;
+        line-height: 1.4;
     }
 
     /* btn */
@@ -2483,10 +2985,7 @@ footer {
         transition: 0s;
     }
 
-    #brandInner dd:nth-of-type(2) {
-        margin-top: 1.6618vw;
-        line-height: 1.4;
-    }
+
 
 
 
@@ -2615,6 +3114,46 @@ footer {
         height: 2.5vw;
     }
 
+    /* 펜더플레이섹션 */
+    #fenderPlay {
+        margin-top: 20vw;
+        width: 100%;
+        height: 52vw;
+        text-align: left;
+        padding: 0 4.8876vw;
+    }
+
+    #fenderPlay p {
+        font-size: 4vw;
+        padding-top: 18vw;
+    }
+
+    #fenderPlay p::before {
+        content: '';
+        display: block;
+        width: 34vw;
+        height: 7.5vw;
+        background: url(../img/fenderPlayLogo.png) no-repeat center/cover;
+        position: absolute;
+        left: 22vw;
+        transform: translate(-50%, -50%);
+        top: 25%;
+    }
+
+    #fenderPlay a {
+        margin-top: 2.4vw;
+        display: block;
+        width: 16vw;
+        height: 6.4vw;
+        font-size: 2.4vw;
+        border: 0.0521vw solid white;
+        color: white;
+        border-radius: 5vw;
+        margin-left: 0vw;
+        text-align: center;
+        line-height: 6.4vw;
+    }
+
 
     /* 푸터반응형 */
     footer {
@@ -2689,6 +3228,192 @@ footer {
 
 /* 768 */
 @media all and (min-width:480px) and (max-width:767px) {
+   
+    #header {
+        height: 28vw;
+        transition: 0s;
+    }
+
+    #header h1 a {
+        width: 28.35vw;
+        height: 10.38vw;
+        top: 4vw;
+        left: 6vw;
+        background: url(../img/Fender_guitars_logo.svg) no-repeat center/cover;
+    }
+
+    #header #gnb {
+        width: 86%;
+        padding: 0;
+        margin: 0 auto;
+        position: inherit;
+        top: 18vw;
+    }
+
+    #header #gnb>ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 4.2vw;
+    }
+
+    #header #gnb>ul>li {
+        width: fit-content;
+    }
+
+    #header #gnb>ul>li>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 3.2vw;
+        text-align: center;
+        line-height: 5.2083vw;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid blue; */
+    }
+
+    #header #gnb>ul>li>a::after {
+        display: none;
+    }
+
+    #header #gnb>ul>li:hover>a::after {
+        display: none;
+    }
+
+    #header #gnb ul ul li {
+        display: none;
+    }
+
+    #header #gnb>ul>li:nth-of-type(1)>ul>li:nth-of-type(6) {
+        display: none;
+    }
+
+    #header #gnb ul ul a {
+        display: none;
+    }
+
+    #header #gnb ul ul a::after {
+        display: none;
+    }
+
+    #header #gnb ul ul a:hover::after {
+        display: none;
+    }
+
+    #snb {
+        width: 46vw;
+        height: 6vw;
+        position: absolute;
+        right: 6.5vw;
+        top: 6.5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        /* border: 0.0521vw solid red; */
+    }
+
+    #snb #moreBtn {
+        display: none;
+    }
+
+    #snb>input {
+        height: 100%;
+        width: 100%;
+        border-radius: 5vw;
+        background-color: #F5F2F2;
+        font-size: 2.8vw;
+        padding: 3vw 4vw 3vw 8vw;
+        border: 0vw solid black;
+        position: absolute;
+    }
+
+    #snb::after {
+        content: '';
+        display: block;
+        width: 2.7345vw;
+        height: 2.6045vw;
+        background: url(../img/more_view.svg) no-repeat center/cover;
+        position: absolute;
+        left: 3.6458vw;
+        background-color: #F5F2F2;
+    }
+
+    #language {
+        display: none;
+    }
+
+    #language a {
+        text-align: center;
+        font-size: 1.0417vw;
+        line-height: 2.0833vw;
+        display: block;
+        width: 2.0833vw;
+        position: relative;
+    }
+
+    #language li:nth-of-type(1) a::after {
+        display: none;
+    }
+
+    /* 배너 */
+    #banner {
+        padding-top: 34vw;
+        width: 100%;
+    }
+
+    #bannerInner {
+        width: 100vw;
+        height: 90vw;
+        margin: 0 auto;
+        margin-left: -1.2vw;
+    }
+
+    #bannerInner div {
+        width: 100%;
+        height: 80vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        height: 80vw;
+        border-radius: 1.5625vw;
+        margin: 0 2.0833vw;
+        padding: 6.5vw;
+    }
+
+    .card dt {
+        font-size: 7.6vw;
+        line-height: 1.2;
+        margin-bottom: 1vw;
+    }
+
+    .card4 dt {
+        width: 46vw;
+        height: 16.3vw;
+        margin-bottom: 3vw;
+    }
+
+    .card1 dd {
+        width: 78%;
+    }
+
+    .card1 dt {
+        width: 82%;
+    }
+
+    .card dd:nth-of-type(1) {
+        font-size: 4.2vw;
+        width: 76%;
+        margin-top: 0.6250vw;
+        text-transform: uppercase;
+    }
+
+    .slick-center .card {
+        height: 86vw;
+    }
 
     /* 메인 shop섹션 */
     #shop {
@@ -2697,7 +3422,6 @@ footer {
         /* 마진값추후수정 */
         position: relative;
         padding: 0 6.5104vw;
-
     }
 
     #shop hgroup {
@@ -2728,6 +3452,7 @@ footer {
         text-align: center;
         margin-top: 6.5104vw;
         position: relative;
+
     }
 
     #shopList li:nth-of-type(1) a::before {
@@ -2812,7 +3537,7 @@ footer {
     }
 
     /* 샵카드 */
-    #shopCard {
+    .shopCard {
         display: flex;
         flex-flow: row nowrap;
         gap: 2.0833vw;
@@ -2822,12 +3547,11 @@ footer {
         margin-bottom: 7.8125vw;
         overflow: hidden;
         width: 107.75%;
-        height: 83.5938vw;
+        height: 85vw;
         position: relative;
-
     }
 
-    #shopCard dd img {
+    .shopCard dd img {
         background-color: #f9f9f9;
         border-radius: 1.041667vw;
         width: 41.6667vw;
@@ -2850,7 +3574,7 @@ footer {
     }
 
 
-    #shopCard dt {
+    .shopCard dt {
         order: 1;
         margin: 0 0 0.5556vw 0.4167vw;
     }
@@ -2858,7 +3582,6 @@ footer {
     .shopPr1>dl dd:nth-of-type(3) {
         width: 4vw;
         height: 4vw;
-        background: url(../img/color1.png) no-repeat center/cover;
         border-radius: 50%;
         position: absolute;
         bottom: -5.7vw;
@@ -2872,7 +3595,6 @@ footer {
     .shopPr1>dl dd:nth-of-type(4) {
         width: 4vw;
         height: 4vw;
-        background: url(../img/color2.png) no-repeat center/cover;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
@@ -2886,7 +3608,6 @@ footer {
     .shopPr1>dl dd:nth-of-type(5) {
         width: 4vw;
         height: 4vw;
-        background: url(../img/color3.png) no-repeat center/cover;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
@@ -2902,7 +3623,7 @@ footer {
         height: 4vw;
         border-radius: 50%;
         position: absolute;
-        bottom: -10.4vw;
+        bottom: -5.6vw;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
@@ -2919,7 +3640,7 @@ footer {
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -10.4vw;
+        bottom: -5.6vw;
         left: 5.9896vw;
         background: #ECEAE5;
         border: 0.0781vw solid #C2C2C2;
@@ -2933,7 +3654,7 @@ footer {
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -10.4vw;
+        bottom: -5.6vw;
         left: 11.9792vw;
         background: #001357;
         border: 0.0781vw solid #C2C2C2;
@@ -2947,7 +3668,7 @@ footer {
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -10.4vw;
+        bottom: -5.6vw;
         left: 17.9688vw;
         background: #E97900;
         border: 0.0781vw solid #C2C2C2;
@@ -2962,7 +3683,6 @@ footer {
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
-        background: #7B011A;
         border: 0.0781vw solid #C2C2C2;
     }
 
@@ -2977,7 +3697,6 @@ footer {
         position: absolute;
         bottom: -5.7vw;
         left: 5.9896vw;
-        background: #E18500;
         border: 0.0781vw solid #C2C2C2;
     }
 
@@ -2991,7 +3710,6 @@ footer {
         position: absolute;
         bottom: -5.7vw;
         left: 11.9792vw;
-        background: #F9D267;
         border: 0.0781vw solid #C2C2C2;
     }
 
@@ -3005,7 +3723,6 @@ footer {
         position: absolute;
         bottom: -5.7vw;
         left: 17.9688vw;
-        background: #1D6E7C;
         border: 0.0781vw solid #C2C2C2;
     }
 
@@ -3019,7 +3736,6 @@ footer {
         position: absolute;
         bottom: -5.7vw;
         left: 23.9583vw;
-        background: #BED9C8;
         border: 0.0781vw solid #C2C2C2;
     }
 
@@ -3032,7 +3748,6 @@ footer {
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
-        background: #406C8D;
         border: 0.0781vw solid #C2C2C2;
     }
 
@@ -3061,7 +3776,6 @@ footer {
         position: absolute;
         bottom: -5.7vw;
         left: 11.9792vw;
-        background: url(../img/color4.png) no-repeat center/cover;
         border: 0.0781vw solid #C2C2C2;
     }
 
@@ -3093,19 +3807,6 @@ footer {
         border: 0.0781vw solid #C2C2C2;
     }
 
-    .shopPr5>dl dd:nth-of-type(5) {
-        width: 4vw;
-        height: 4vw;
-        border-radius: 50%;
-        text-indent: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        position: absolute;
-        bottom: -5.7vw;
-        left: 11.9792vw;
-        background: #9B1623;
-        border: 0.0781vw solid #C2C2C2;
-    }
 
     .shopPr6>dl dd:nth-of-type(3) {
         width: 4vw;
@@ -3116,7 +3817,6 @@ footer {
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
-        background: url(../img/color_jimmy.png) no-repeat center/cover;
         border: 0.0781vw solid #C2C2C2;
     }
 
@@ -3149,11 +3849,10 @@ footer {
     /* 메인 guitarBody섹션 */
     #guitarBody {
         width: 100%;
-        height: 113.2813vw;
+        height: 240vw;
         position: relative;
         /* 마진바텀 나중에 수정 */
         overflow: hidden;
-
     }
 
     #guitarBody hgroup {
@@ -3177,6 +3876,7 @@ footer {
         height: 2.3438vw;
         margin: 3.3854vw 0 2.3958vw 6.5104vw;
         gap: 2.0833vw;
+        transition: 0s;
     }
 
     #guitarBody li>a {
@@ -3189,40 +3889,112 @@ footer {
         border: 1px solid #ccc;
         width: 18.2292vw;
         height: 6.7708vw;
+        transition: 0s;
     }
 
     #electric1 {
-        width: 200%;
+        width: 100%;
+        height: 200vw;
         display: flex;
+        flex-flow: column nowrap;
         justify-content: space-between;
-        left: 103.6458vw;
+        left: 0vw;
+        transform: translateX(0%);
         top: 36.4167vw;
         gap: 3.6458vw;
+        transition: 0s;
+        padding: 0 6.5104vw;
 
     }
 
     #electric1 a {
-        width: 63.8542vw;
-        height: 76.8229vw;
+        width: 100%;
+        height: 100%;
         border-radius: 2.6042vw;
         padding: 4.1667vw;
+        transition: 0s;
     }
 
 
     #electric1 a dt {
         font-size: 2.3438vw;
         letter-spacing: 0.1302vw;
+        transition: 0s;
+
     }
 
     #electric1 a dd:nth-of-type(1) {
         font-size: 4.6875vw;
         line-height: 1.25;
         margin-top: 0.4167vw;
+        transition: 0s;
+
     }
 
     #electric1 a dd:nth-of-type(2) {
         font-size: 3.125vw;
         margin-top: 1.5625vw;
+        transition: 0s;
+
+    }
+
+    /* 카드돌아가는 효과 */
+    #electric1 a>div {
+        border-radius: 1.0417vw;
+        transform: rotateY(180deg);
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        transition: 0s;
+
+    }
+
+    #electric1 a>* {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 5.4vw;
+        background: no-repeat center center;
+        backface-visibility: hidden;
+        transition: 0s;
+
+    }
+
+    #electric1 a>div>video {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(1)>div::before {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(2)>div::before {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(3)>div::before {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(1):hover {
+        transform: rotateY(0deg);
+        box-shadow: 0 0 0vw rgb(66, 66, 66);
+    }
+
+    #electric1 a:nth-of-type(2):hover {
+        transform: rotateY(0deg);
+        box-shadow: 0 0 0vw rgb(66, 66, 66);
+    }
+
+    #electric1 a:nth-of-type(3):hover {
+        transform: rotateY(-0deg);
+        box-shadow: 0 0 0vw rgb(66, 66, 66);
+    }
+
+    #electric1 {
+        perspective: none;
     }
 
 
@@ -3259,10 +4031,6 @@ footer {
         border-radius: 1.9531vw;
     }
 
-    #limited #videoTest::after {
-        width: 12.2396vw;
-        height: 12.2396vw;
-    }
 
     .limitedVideo {
         text-align: left;
@@ -3529,6 +4297,35 @@ footer {
         margin-top: 5.2083vw;
     }
 
+    #artistGrid div.artistOn {
+        /* filter: grayscale(1); */
+        scale: 1;
+        transition: 0s;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: none;
+            opacity: 0.3;
+            border-radius: 1.0417vw;
+            box-shadow: 0 0 0 black;
+        }
+    }
+
+    #artistGrid div.artistOn a dd,
+    #artistGrid div.artistOn a dt {
+        opacity: 0;
+        transition: 0s;
+        position: relative;
+        z-index: 99;
+    }
+
     /* 메인 brand섹션 */
     /* 제목  */
     #brand {
@@ -3563,24 +4360,47 @@ footer {
 
     #brandInner dl {
         height: 54.6875vw;
-        padding: 3.9063vw;
+        padding: 5.2vw 5.8vw;
+        text-shadow: 0 0 0 black;
+        transition: 0s;
+        position: relative;
         /* 패딩값 글씨 크기보고 계산 */
+    }
+
+    #brandInner dl::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 54.6875vw;
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        border-radius: 1.9557vw;
+        opacity: 0.15;
     }
 
     #brandInner dt {
         font-size: 4.6875vw;
         letter-spacing: 0.1302vw;
         margin-bottom: 0.3250vw;
+        z-index: 100;
+        position: relative;
     }
 
     #brandInner dd {
         font-size: 2.3438vw;
         letter-spacing: 0.1302vw;
+        position: relative;
+        z-index: 100;
     }
 
     #brandInner dd:nth-of-type(2) {
         padding-top: 2.0833vw;
         font-size: 2.7344vw;
+        margin-top: 2.25vw;
+        line-height: 1.4;
     }
 
     /* btn */
@@ -3620,6 +4440,7 @@ footer {
     .brandCard {
         flex: 1;
         filter: grayscale(0);
+
     }
 
     .brandCard dt,
@@ -3640,10 +4461,6 @@ footer {
         transition: 0s;
     }
 
-    #brandInner dd:nth-of-type(2) {
-        margin-top: 2.25vw;
-        line-height: 1.4;
-    }
 
 
 
@@ -3652,37 +4469,35 @@ footer {
         width: 100%;
         text-align: left;
         margin-bottom: 26.0417vw;
+        padding: 0 6.5104vw;
     }
 
     #news hgroup h2 {
         font-size: 5.9896vw;
         letter-spacing: 0.2604vw;
-        margin-left: 8.3333vw;
+        margin-left: 0;
     }
 
     #news hgroup p {
         font-size: 2.7344vw;
         margin-bottom: 0.2083vw;
-        margin-left: 8.3333vw;
+        margin-left: 0;
     }
 
     .newsGridInner dl {
-        left: 11.7188vw;
-        width: 70.7083vw;
+        left: 0;
+        width: 90%;
     }
 
     .newsGridInner dt {
         font-size: 4.4271vw;
         margin-bottom: 2.6042vw;
         letter-spacing: 0.2604vw;
-        margin-left: -3.9063vw;
     }
 
     .newsGridInner dd {
-        font-size: 2.3438vw;
         font-size: 2.7344vw;
         line-height: 1.5;
-        margin-left: -3.9063vw;
     }
 
     #newsGrid {
@@ -3695,37 +4510,41 @@ footer {
     #newsGrid.one::before {
         content: '';
         display: block;
-        width: 83.3333vw;
+        width: 86.68vw;
         height: 83.5938vw;
         border-radius: 2.6042vw;
         background: url(../img/news1.jpg) no-repeat center/cover;
         grid-column-start: 2;
+        left: 38.5%;
         position: relative;
-        left: -6.5104vw;
+        transform: translateX(-50%);
     }
+
 
     #newsGrid.two::before {
         content: '';
         display: block;
-        width: 83.3333vw;
+        width: 86.68vw;
         height: 83.5938vw;
         border-radius: 2.6042vw;
         background: url(../img/news2.jpg) no-repeat center/cover;
         grid-column-start: 2;
+        left: 38.5%;
         position: relative;
-        left: -6.5104vw;
+        transform: translateX(-50%);
     }
 
     #newsGrid.three::before {
         content: '';
         display: block;
-        width: 83.3333vw;
+        width: 86.68vw;
         height: 83.5938vw;
         border-radius: 2.6042vw;
         background: url(../img/news3.jpg) no-repeat center/cover;
         grid-column-start: 2;
+        left: 38.5%;
         position: relative;
-        left: -6.5104vw;
+        transform: translateX(-50%);
     }
 
     #newsGrid {
@@ -3766,6 +4585,45 @@ footer {
         height: 2.6042vw;
     }
 
+    /* 펜더플레이섹션 */
+    #fenderPlay {
+        margin-top: 20vw;
+        width: 100%;
+        height: 62vw;
+        text-align: left;
+        padding: 0 6.5104vw;
+    }
+
+    #fenderPlay p {
+        font-size: 5.6vw;
+        padding-top: 22.6vw;
+    }
+
+    #fenderPlay p::before {
+        content: '';
+        display: block;
+        width: 40.8vw;
+        height: 9.2vw;
+        position: absolute;
+        left: 26vw;
+        transform: translate(-50%, -50%);
+        top: 25%;
+    }
+
+    #fenderPlay a {
+        margin-top: 2.4vw;
+        display: block;
+        width: 24vw;
+        height: 8.6vw;
+        font-size: 3.4vw;
+        border: 0.0521vw solid white;
+        color: white;
+        border-radius: 5vw;
+        margin-left: 0vw;
+        text-align: center;
+        line-height: 8.6vw;
+    }
+
 
     /* 푸터반응형 */
     footer {
@@ -3779,7 +4637,6 @@ footer {
         position: relative;
         color: white;
         font-size: 3.3854vw;
-        border: 1px solid blue;
     }
 
     #footerInner::before {
@@ -3839,185 +4696,427 @@ footer {
 
 /* 반응형 479 */
 @media screen and (max-width: 479px) {
-    /* #shop {
+   
+   body.noScroll{
+        overflow: hidden;
+        height: 100vh
+    }
+
+    #header {
+        position: static;
+        height: 20vw;
+        transition: 0s;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    #header h1 a {
+        width: 34.4vw;
+        height: 12.75vw;
+        top: 4vw;
+        left: 6vw;
+        background: url(../img/Fender_guitars_logo.svg) no-repeat center/cover;
+    }
+
+    #header #gnb {
+        width: 100%;
+        height: 100vh;
+        background-color: #191919;
+        position: fixed;
+        transform: none;
+        margin-left: 100%;
+        transition: 0.6s;
+    }
+    #header #gnb.fadeShow {
+        width: 100%;
+        height: 100vh;
+        background-color: #191919;
+        position: fixed;
+        transform: none;
+        margin-left: -50%;
+        transition: 0.6s;
+    }
+
+    #header #gnb>ul {
+        width: 40vw;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+        position: absolute;
+        gap: 4vw;
+        top: 30vw;
+        left: 8vw;
+    }
+
+    #header #gnb>ul>li {
+        width: 100%;
+        height: 10vw;
+    }
+
+    #header #gnb>ul>li>a {
+        display: block;
+        height: 100%;
+        font-size: 6.4vw;
+        text-align: left;
+        line-height: 10vw;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        color: white;
+        /* border: 1px solid blue; */
+    }
+
+    #header #gnb>ul>li>a::after {
+        display: none;
+    }
+
+    #header #gnb>ul>li:hover>a::after {
+        display: none;
+    }
+
+    #header #gnb ul ul li {
+        display: none;
+    }
+
+    #header #gnb>ul>li:nth-of-type(1)>ul>li:nth-of-type(6) {
+        display: none;
+    }
+
+    #header #gnb ul ul a {
+        display: none;
+    }
+
+    #header #gnb ul ul a::after {
+        display: none;
+    }
+
+    #header #gnb ul ul a:hover::after {
+        display: none;
+    }
+
+    #snb {
+        width: 46vw;
+        height: 6vw;
+        position: absolute;
+        right: 6.5vw;
+        top: 6.5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        /* border: 0.0521vw solid red; */
+    }
+
+    #snb #moreBtn {
+        display: block;
+        width: 5.5vw;
+        height: 4.855vw;
+        background: url(../img/more_view2.svg) no-repeat center/cover;
+        position: absolute;
+        left: 40vw;
+        top: 1.6vw;
+        cursor: pointer;
+        text-indent: 100%;
+        white-space: nowrap;
+        transition: 0.2s;
+
+    }
+
+    #snb>input {
+        display: none;
+    }
+
+    #snb::after {
+        display: none;
+    }
+
+    #snb::before {
+        content: '';
+        display: block;
+        width: 5.6vw;
+        height: 5.6vw;
+        background: url(../img/more_view.svg) no-repeat center/cover;
+        position: absolute;
+        left: 30vw;
+        top: 1.2vw;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    #snb.moreBtnOn::before {
+        content: '';
+        display: block;
+        width: 5.6vw;
+        height: 5.6vw;
+        background: url(../img/more_view.svg) no-repeat center/cover;
+        position: absolute;
+        left: 30vw;
+        top: 1.2vw;
+        cursor: pointer;
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+        transition: 1s;
+    }
+
+    #language {
+        display: none;
+    }
+
+    #language a {
+        display: none;
+    }
+
+    #language li:nth-of-type(1) a::after {
+        display: none;
+    }
+
+    /* 배너섹션 */
+    #banner {
+        width: 100%;
+        height: 100vw;
+        padding-top: 10vw;
+    }
+
+    #bannerInner {
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 0px;
+    }
+
+    #bannerInner div {
+        width: 100%;
+        height: 80vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        height: 80vw;
+        border-radius: 3vw;
+        margin: 0 2.0833vw;
+        padding: 6.4vw;
+    }
+
+    .card dt {
+        font-size: 7.6vw;
+        line-height: 1.2;
+        margin-bottom: 1vw;
+        width: 80%;
+    }
+
+    .card4 dt {
+        width: 46vw;
+        height: 16.3vw;
+        margin-bottom: 3vw;
+    }
+
+    .card1 dt {
+        width: 75%;
+
+    }
+
+    .card1 dd {
+        width: 80%;
+    }
+
+    .card dd:nth-of-type(1) {
+        font-size: 3.4vw;
+        margin-top: 0.6250vw;
+        text-transform: uppercase;
+    }
+
+    .slick-center .card {
+        height: 86vw;
+    }
+
+    /* 샵섹션 */
+    #shop {
         width: 100%;
         height: 354.4885vw;
         margin-bottom: 20.8768vw;
         position: relative;
-        padding: 0 10.4384vw;
+        padding: 0 6.2630vw;
     }
 
     #shop hgroup {
         margin-top: 9.1858vw;
         text-align: left;
-        padding: 1.6701vw;
+        padding: 0;
+        width: 90%;
     }
 
     #shop hgroup h2 {
-        font-size: 10.0209vw;
+        font-size: 7.5157vw;
         letter-spacing: 0.4175vw;
 
     }
 
     #shop hgroup p {
-        font-size: 5.0104vw;
+        font-size: 4.1754vw;
         margin-bottom: 0.4175vw;
-    } */
+    }
 
     /* 리스트 */
-    /* #shopList {
+    #shopList {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         font-size: 4.1754vw;
         text-align: center;
         margin: 0 auto;
         margin-top: 10.4384vw;
         column-gap: 14.6138vw;
         row-gap: 2.0877vw;
+
     }
 
     #shopList li:nth-of-type(1) a::before {
         content: '';
         display: block;
-        width: 35.0731vw;
-        height: 35.0731vw;
+        width: 19vw;
+        height: 19vw;
         background: url(../img/shopList1.png) no-repeat center 80%/cover;
         background-size: 80%;
+        margin-bottom: 2.0877vw;
     }
 
     #shopList li:nth-of-type(2) a::before {
         content: '';
         display: block;
-        width: 35.0731vw;
-        height: 35.0731vw;
+        width: 19vw;
+        height: 19vw;
         background: url(../img/shopList2.png) no-repeat center 80%/cover;
         background-size: 80%;
-
+        margin-bottom: 2.0877vw;
     }
 
     #shopList li:nth-of-type(3) a::before {
         content: '';
         display: block;
-        width: 35.0731vw;
-        height: 35.0731vw;
+        width: 19vw;
+        height: 19vw;
         background: url(../img/shopList3.png) no-repeat center/cover;
         background-size: 80%;
+        margin-bottom: 2.0877vw;
 
     }
 
     #shopList li:nth-of-type(4) a::before {
         content: '';
         display: block;
-        width: 35.0731vw;
-        height: 35.0731vw;
+        width: 19vw;
+        height: 19vw;
         background: url(../img/shopList4.png) no-repeat 52% 75%/cover;
         background-size: 55%;
-
+        margin-bottom: 2.0877vw;
     }
 
     #shopList li:nth-of-type(5) a::before {
         content: '';
         display: block;
-        width: 35.0731vw;
-        height: 35.0731vw;
+        width: 19vw;
+        height: 19vw;
         background: url(../img/shopList5.png) no-repeat center 70%/cover;
         background-size: 60%;
+        margin-bottom: 2.0877vw;
     }
 
     #shopList li:nth-of-type(6) a::before {
         content: '';
         display: block;
-        width: 35.0731vw;
-        height: 35.0731vw;
+        width: 19vw;
+        height: 19vw;
         background: url(../img/shopList6.png) no-repeat center 80%/cover;
         background-size: 70%;
+        margin-bottom: 2.0877vw;
     }
 
     #shopList li:nth-of-type(7) a::before {
         content: '';
         display: block;
-        width: 35.0731vw;
-        height: 35.0731vw;
+        width: 19vw;
+        height: 19vw;
         background: url(../img/shopList7.png) no-repeat center 70%/cover;
         background-size: 34%;
+        margin-bottom: 2.0877vw;
     }
 
     #shopList li:nth-of-type(8) a::before {
         content: '';
         display: block;
-        width: 35.0731vw;
-        height: 35.0731vw;
+        width: 19vw;
+        height: 19vw;
         background: url(../img/shopList8.png) no-repeat center 70%/cover;
         background-size: 60%;
+        margin-bottom: 2.0877vw;
     }
 
     #shopList li a {
         display: block;
         text-align: center;
-        font-size: 5.0104vw;
-
-    } */
+        font-size: 4.1754vw;
+        padding: 1px;
+        width: 100%;
+    }
 
     /* 리스트라인 */
-    /* #slideLine {
+    #slideLine {
         display: none;
     }
 
     #slideLineInner {
         display: none;
-    } */
+    }
 
     /* 샵카드 */
-    /* #shopCard {
+    .shopCard {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         margin: 0 auto;
         margin-top: 25.0522vw;
         margin-bottom: 12.5261vw;
         overflow: hidden;
         width: 100%;
-        height: 258.0376vw;
-        column-gap: 6.6806vw;
-        row-gap: 33.4029vw;
-
+        height: 274vw;
+        column-gap: 3.6vw;
+        row-gap: 24vw;
     }
 
-    #shopCard dd img {
+    .shopCard dd img {
         background-color: #f9f9f9;
         border-radius: 1.6701vw;
-        width: 58.4551vw;
-        margin-bottom: 6.4718vw;
+        width: 40vw;
+        margin-bottom: 2vw;
 
     }
 
     .shopPrice {
-        font-size: 3.7578vw;
+        font-size: 3.6vw;
         order: 2;
         margin-left: 0.6263vw;
     }
 
     .shopName a {
         display: block;
-        font-size: 5.0104vw;
+        font-size: 4vw;
         text-transform: uppercase;
         letter-spacing: 0.2088vw;
     }
 
-    #shopCard dt {
+    .shopCard dt {
         order: 1;
-        margin: 0 0 0.8351vw 0.6263vw;
+        margin: 0 0 1vw 0;
     }
 
     .shopPr1>dl dd:nth-of-type(3) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         background: url(../img/color1.png) no-repeat center/cover;
         border-radius: 50%;
         position: absolute;
-        bottom: -9.1858vw;
+        bottom: -8vw;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
@@ -4026,39 +5125,39 @@ footer {
 
 
     .shopPr1>dl dd:nth-of-type(4) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         background: url(../img/color2.png) no-repeat center/cover;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 9.6033vw;
+        bottom: -8vw;
+        left: 8vw;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr1>dl dd:nth-of-type(5) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         background: url(../img/color3.png) no-repeat center/cover;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 19.2067vw;
+        bottom: -8vw;
+        left: 16vw;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr2>dl dd:nth-of-type(3) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         position: absolute;
-        bottom: -9.1858vw;
+        bottom: -8vw;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
@@ -4068,53 +5167,53 @@ footer {
 
 
     .shopPr2>dl dd:nth-of-type(4) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 9.6033vw;
+        bottom: -8vw;
+        left: 8vw;
         background: #ECEAE5;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr2>dl dd:nth-of-type(5) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 19.2067vw;
+        bottom: -8vw;
+        left: 16vw;
         background: #001357;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr2>dl dd:nth-of-type(6) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 28.8100vw;
+        bottom: -8vw;
+        left: 24vw;
         background: #E97900;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr3>dl dd:nth-of-type(3) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         position: absolute;
-        bottom: -9.1858vw;
+        bottom: -8vw;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
@@ -4124,67 +5223,57 @@ footer {
 
 
     .shopPr3>dl dd:nth-of-type(4) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 9.6033vw;
+        bottom: -8vw;
+        left: 8vw;
         background: #E18500;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr3>dl dd:nth-of-type(5) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 19.2067vw;
+        bottom: -8vw;
+        left: 16vw;
         background: #F9D267;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr3>dl dd:nth-of-type(6) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 28.8100vw;
+        bottom: -8vw;
+        left: 24vw;
         background: #1D6E7C;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr3>dl dd:nth-of-type(7) {
-        width: 6.4718vw;
-        height: 6.4718vw;
-        border-radius: 50%;
-        text-indent: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        position: absolute;
-        bottom: -9.1858vw;
-        left: 38.4134vw;
-        background: #BED9C8;
-        border: 0.2088vw solid #C2C2C2;
+        display: none;
     }
 
     .shopPr4>dl dd:nth-of-type(3) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         position: absolute;
-        bottom: -9.1858vw;
+        bottom: -8vw;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
@@ -4194,39 +5283,39 @@ footer {
 
 
     .shopPr4>dl dd:nth-of-type(4) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 9.6033vw;
+        bottom: -8vw;
+        left: 8vw;
         background: #560000;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr4>dl dd:nth-of-type(5) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 19.2067vw;
+        bottom: -8vw;
+        left: 16vw;
         background: url(../img/color4.png) no-repeat center/cover;
         border: 0.2088vw solid #C2C2C2;
     }
 
     .shopPr5>dl dd:nth-of-type(3) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         position: absolute;
-        bottom: -9.1858vw;
+        bottom: -8vw;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
@@ -4236,39 +5325,26 @@ footer {
 
 
     .shopPr5>dl dd:nth-of-type(4) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        bottom: -9.1858vw;
-        left: 9.6033vw;
+        bottom: -8vw;
+        left: 8vw;
         background: #600000;
         border: 0.2088vw solid #C2C2C2;
     }
 
-    .shopPr5>dl dd:nth-of-type(5) {
-        width: 6.4718vw;
-        height: 6.4718vw;
-        border-radius: 50%;
-        text-indent: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        position: absolute;
-        bottom: -9.1858vw;
-        left: 19.2067vw;
-        background: #9B1623;
-        border: 0.2088vw solid #C2C2C2;
-    }
 
     .shopPr6>dl dd:nth-of-type(3) {
-        width: 6.4718vw;
-        height: 6.4718vw;
+        width: 5.5vw;
+        height: 5.5vw;
         border-radius: 50%;
         position: absolute;
-        bottom: -16.0752vw;
+        bottom: -13.4vw;
         text-indent: 100%;
         overflow: hidden;
         white-space: nowrap;
@@ -4278,76 +5354,87 @@ footer {
 
     .shopPr span {
         display: none;
-    } */
+    }
 
     /* 메인 guitarBody섹션 */
-    /* #guitarBody {
+    #guitarBody {
         width: 100%;
-        height: 296.2422vw;
+        height: 310.2422vw;
         position: relative;
-        margin-top: 145.9290vw; */
-    /* 임의 마진 */
-    /* } */
+        margin-top: 145.9290vw;
+        padding: 0 6.2630vw;
+        overflow: hidden;
+    }
 
-    /* #guitarBody hgroup {
+    #guitarBody hgroup {
+        padding: 0;
+        width: 105%;
         text-align: left;
-        padding: 0 10.4384vw;
     }
 
     #guitarBody hgroup h2 {
-        font-size: 10.0209vw;
+        font-size: 7.5157vw;
         letter-spacing: 0.4175vw;
-
     }
 
     #guitarBody hgroup p {
-        font-size: 5.0104vw;
+        font-size: 4.1754vw;
         margin-bottom: 0.4175vw;
-    } */
+    }
 
     /* 선택btn */
-    /* #guitarBody ul {
+    #guitarBody ul {
         height: 11.6910vw;
-        width: 128.1837vw;
-        margin: 5.4280vw 0 3.7578vw 10.4384vw;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 5.4280vw;
         gap: 3.3403vw;
+        display: flex;
+        justify-content: space-between;
+        transition: 0s;
+
     }
 
     #guitarBody li>a {
         display: block;
-        font-size: 4.3841vw;
+        font-size: 4vw;
         line-height: 10.8559vw;
         text-align: center;
         color: #404040;
         border-radius: 12.5261vw;
         border: 0.2088vw solid #ccc;
-        width: 29.2276vw;
+        width: 26vw;
         height: 10.8559vw;
+        transition: 0s;
+
     }
 
+    /* 반응형 일렉트릭 */
     #electric1 {
-        width: 188.7265vw;
-        ;
+        width: 88%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-content: space-between;
-        left: 50%;
         top: 58.4551vw;
         gap: 5.8455vw;
+        margin: 0 auto;
+        transition: 0s;
     }
 
     #electric1 a {
-        width: 188.7265vw;
+        width: 100%;
         height: 76.8267vw;
         border-radius: 4.1754vw;
-        padding: 8.5595vw;
+        padding: 8vw 6vw;
+        transition: 0s;
+
     }
 
     #electric1 a:nth-of-type(1):before {
         content: '';
         display: block;
-        width: 188.7265vw;
+        width: 100%;
         height: 76.8267vw;
         border-radius: 4.1754vw;
         background-color: rgb(0, 0, 0);
@@ -4365,7 +5452,7 @@ footer {
     #electric1 a:nth-of-type(2):before {
         content: '';
         display: block;
-        width: 188.7265vw;
+        width: 100%;
         height: 76.8267vw;
         border-radius: 4.1754vw;
         background-color: rgb(0, 0, 0);
@@ -4383,7 +5470,7 @@ footer {
     #electric1 a:nth-of-type(3):before {
         content: '';
         display: block;
-        width: 188.7265vw;
+        width: 100%;
         height: 76.8267vw;
         border-radius: 4.1754vw;
         background-color: rgb(0, 0, 0);
@@ -4395,42 +5482,108 @@ footer {
     }
 
     #electric1 a dt {
-        font-size: 3.7578vw;
+        font-size: 4.1754vw;
         letter-spacing: 0.2088vw;
         z-index: 96;
         position: relative;
+        transition: 0s;
+
     }
 
     #electric1 a dd:nth-of-type(1) {
-        font-size: 7.5157vw;
+        font-size: 7vw;
         line-height: 1.25;
         margin-top: 0.6263vw;
         z-index: 96;
         position: relative;
+        transition: 0s;
+
     }
 
     #electric1 a dd:nth-of-type(2) {
-        font-size: 5.0104vw;
+        font-size: 4.5vw;
         margin-top: 2.5052vw;
         z-index: 96;
         position: relative;
+        transition: 0s;
+
     }
 
+    /* 카드돌아가는 효과 */
+    #electric1 a>div {
+        border-radius: 1.0417vw;
+        transform: rotateY(180deg);
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        transition: 0s;
 
+    }
 
+    #electric1 a>* {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 6vw;
+        background: no-repeat center center;
+        backface-visibility: hidden;
+        transition: 0s;
+
+    }
+
+    #electric1 a>div>video {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(1)>div::before {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(2)>div::before {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(3)>div::before {
+        display: none;
+    }
+
+    #electric1 a:nth-of-type(1):hover {
+        transform: rotateY(0deg);
+        box-shadow: 0 0 0vw rgb(66, 66, 66);
+    }
+
+    #electric1 a:nth-of-type(2):hover {
+        transform: rotateY(0deg);
+        box-shadow: 0 0 0vw rgb(66, 66, 66);
+    }
+
+    #electric1 a:nth-of-type(3):hover {
+        transform: rotateY(-0deg);
+        box-shadow: 0 0 0vw rgb(66, 66, 66);
+    }
+
+    #electric1 {
+        perspective: none;
+    }
+
+    /* 효과 끝 */
 
     /* 메인  limited섹션*/
     #limited {
         width: 100%;
         margin-bottom: 54.2797vw;
         padding-top: 20.8768vw;
+        padding-left: 6.2630vw;
+        padding-right: 6.2630vw;
     }
 
     #limited hgroup {
         text-align: left;
         margin: 10.4384vw 0;
-        margin-left: 6.2630vw;
-        width: 90%;
+        margin-left: 0;
+        width: 100%;
     }
 
     #limited hgroup h2 {
@@ -4448,20 +5601,16 @@ footer {
     #limited #videoTest {
         display: block;
         height: 90vw;
-        width: 82.8372vw;
+        width: 100%;
         border-radius: 3.1315vw;
         margin: 0 auto;
-    }
-
-    #limited #videoTest::after {
-        width: 15vw;
-        height: 15vw;
+        position: inherit;
     }
 
     .limitedVideo {
         text-align: left;
         margin-top: 12.5261vw;
-        padding: 0 6.2630vw;
+        padding: 0;
     }
 
     .limitedVideo dt {
@@ -4476,11 +5625,12 @@ footer {
     }
 
     #limitedBtn {
-        width: 100%;
-        margin: 35vw 0 0 0;
+        width: 94%;
+        margin: 0 auto;
+        margin-top: 35vw;
         display: flex;
-        justify-content: start;
-        padding-left: 4vw;
+        justify-content: space-between;
+        padding-left: 0;
     }
 
     #limitedBtn .buy {
@@ -4505,13 +5655,15 @@ footer {
     #artist {
         width: 100%;
         margin-bottom: 20.8768vw;
+        padding: 0 6.2630vw;
     }
 
     #artist hgroup {
         text-align: left;
         padding: 0;
         margin-bottom: 10.4384vw;
-        width: 65%;
+        width: 70%;
+        margin-left: 0;
     }
 
     #artist hgroup h2 {
@@ -4531,7 +5683,7 @@ footer {
     #artistGrid {
         width: 100%;
         height: 167.0146vw;
-        padding: 0 6.2630vw;
+        padding: 0;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(8, 1fr);
@@ -4597,6 +5749,35 @@ footer {
         grid-column-end: 8;
         grid-row-start: 1;
         grid-row-end: 3;
+    }
+
+    #artistGrid div.artistOn {
+        /* filter: grayscale(1); */
+        scale: 1;
+        transition: 0s;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: none;
+            opacity: 0.3;
+            border-radius: 1.0417vw;
+            box-shadow: 0 0 0 black;
+        }
+    }
+
+    #artistGrid div.artistOn a dd,
+    #artistGrid div.artistOn a dt {
+        opacity: 0;
+        transition: 0s;
+        position: relative;
+        z-index: 99;
     }
 
     /* 아티스트 btn */
@@ -4733,12 +5914,12 @@ footer {
     #brand {
         width: 100%;
         margin-bottom: 64.0919vw;
+        padding: 0 6.2630vw;
     }
 
     #brand hgroup {
         padding: 0;
         text-align: left;
-        padding-left: 6.2630vw;
     }
 
     #brand hgroup h2 {
@@ -4754,7 +5935,8 @@ footer {
 
     /* 카드 */
     #brandInner {
-        padding: 0 6.2630vw;
+        padding: 0;
+        margin: 0 auto;
         margin-top: 8.5595vw;
         display: grid;
         gap: 6.2630vw;
@@ -4763,12 +5945,11 @@ footer {
 
     #brandInner dl {
         height: 120vw;
-        width: 81.8372vw;
-        padding: 9.6033vw;
+        width: 100%;
+        padding: 10vw 6.5vw;
         border-radius: 6.2630vw;
         position: inherit;
-        transition: 0;
-        margin: 0 auto;
+        transition: 0s;
     }
 
     #brandInner dl:nth-of-type(1) {
@@ -4779,8 +5960,7 @@ footer {
         content: '';
         display: block;
         height: 120vw;
-        height: 120vw;
-        width: 81.8372vw;
+        width: 100%;
         position: absolute;
         background-color: #000000;
         top: 0;
@@ -4798,8 +5978,7 @@ footer {
         content: '';
         display: block;
         height: 120vw;
-        height: 120vw;
-        width: 81.8372vw;
+        width: 100%;
         position: absolute;
         background-color: #000000;
         top: 0;
@@ -4817,7 +5996,7 @@ footer {
         content: '';
         display: block;
         height: 120vw;
-        width: 81.8372vw;
+        width: 100%;
         position: absolute;
         background-color: #000000;
         top: 0;
@@ -4828,7 +6007,7 @@ footer {
     }
 
     #brandInner dt {
-        width: 85%;
+        width: 75%;
         font-size: 7.5157vw;
         letter-spacing: 0.2088vw;
         margin-bottom: 0.6263vw;
@@ -4839,7 +6018,6 @@ footer {
     }
 
     #brandInner dd {
-        font-size: 4.1754vw;
         letter-spacing: 0.2088vw;
         position: relative;
         z-index: 99;
@@ -4852,7 +6030,7 @@ footer {
 
     #brandInner dd:nth-of-type(2) {
         padding-top: 3.3403vw;
-        font-size: 5.4280vw;
+        font-size: 4.1754vw;
     }
 
     /* btn */
@@ -4876,12 +6054,12 @@ footer {
 
     #brandInner dl:nth-of-type(2) {
         border-radius: 4.1754vw;
-
+        margin-top: 3.5491vw;
+        line-height: 1.4;
     }
 
     #brandInner dl:nth-of-type(3) {
         border-radius: 4.1754vw;
-
     }
 
     #brandInner .brandOff dt,
@@ -4913,12 +6091,6 @@ footer {
         transition: 0s;
     }
 
-    #brandInner dd:nth-of-type(2) {
-        margin-top: 3.5491vw;
-        line-height: 1.4;
-    }
-
-
 
     /* 메인 news섹션 */
     #news {
@@ -4926,18 +6098,17 @@ footer {
         height: 187.8914vw;
         text-align: left;
         margin-bottom: 83.5073vw;
+        padding: 0 6.2630vw;
     }
 
     #news hgroup h2 {
         font-size: 7.5157vw;
         letter-spacing: 0.4175vw;
-        margin-left: 6.2630vw;
     }
 
     #news hgroup p {
         font-size: 4.1754vw;
         margin-bottom: 0.4175vw;
-        margin-left: 6.2630vw;
     }
 
     .newsGridInner dl {
@@ -4950,7 +6121,6 @@ footer {
         font-size: 5.8455vw;
         margin-bottom: 4.1754vw;
         letter-spacing: 0.4175vw;
-        margin-left: 5.0104vw;
         line-height: 1.3;
         width: 90%;
     }
@@ -4958,8 +6128,7 @@ footer {
     .newsGridInner dd {
         font-size: 4.1754vw;
         line-height: 1.5;
-        padding-left: 5.0104vw;
-        width: 95%;
+        width: 98%;
     }
 
     #newsGrid {
@@ -4972,7 +6141,7 @@ footer {
     #newsGrid.one::before {
         content: '';
         display: block;
-        width: 82.2651vw;
+        width: 100%;
         height: 79.3319vw;
         border-radius: 4.1754vw;
         background: url(../img/news1.jpg) no-repeat center/cover;
@@ -5002,7 +6171,8 @@ footer {
         font-size: 4.3841vw;
         border-radius: 10.4384vw;
         bottom: -40vw;
-        left: 4vw;
+        left: 9vw;
+
     }
 
     #news a:nth-of-type(2) {
@@ -5012,7 +6182,7 @@ footer {
         font-size: 4.3841vw;
         border-radius: 16.0752vw;
         bottom: -40vw;
-        left: 46vw;
+        left: 52vw;
     }
 
     #newsGridBtn {
@@ -5022,6 +6192,45 @@ footer {
 
     #newsGridBtn li {
         display: none;
+    }
+
+    /* 펜더플레이 */
+    #fenderPlay {
+        margin-top: 20vw;
+        width: 100%;
+        height: 86vw;
+        text-align: left;
+        padding: 0 6.2630vw;
+    }
+
+    #fenderPlay p {
+        font-size: 6.4vw;
+        padding-top: 30.6vw;
+    }
+
+    #fenderPlay p::before {
+        content: '';
+        display: block;
+        width: 58.2vw;
+        height: 13vw;
+        position: absolute;
+        left: 34vw;
+        transform: translate(-50%, -50%);
+        top: 25%;
+    }
+
+    #fenderPlay a {
+        margin-top: 6.8vw;
+        display: block;
+        width: 34vw;
+        height: 12vw;
+        font-size: 4.8vw;
+        border: 0.0521vw solid white;
+        color: white;
+        border-radius: 10vw;
+        margin-left: 0vw;
+        text-align: center;
+        line-height: 12vw;
     }
 
 
@@ -5093,4 +6302,5 @@ footer {
     .fnbList>ul {
         display: none;
     }
+
 }

@@ -74,8 +74,9 @@
         </nav>
         <!-- gnb 이용메뉴 -->
         <div id="snb">
-            <a href="#">검색</a>
+            <input type="text">
             <!-- after 돋보기 이미지 -->
+            <div id="moreBtn"></div>
             <ul id="language">
                 <li><a href="#">KR</a></li>
                 <li><a href="#" class="lngOn">EN</a></li>
@@ -90,14 +91,21 @@
             <!-- 슬로건 banner >>  hidden  슬라이드  https://kenwheeler.github.io/slick/-->
             <div id="bannerInner">
                 <div>
-                    <dl class="card card1">
+                    <dl class="card card4">
                         <dt>
-                            아티스트는 천사와 같으며, <br>
-                            펜더는 날개를 달아 줄 것이다
+                            highway
                         </dt>
                         <dd>
-                            fender is our life and music, make a best
+                            간소화된 highway 시리즈는<br>
+                            라이브 어쿠스틱 연주자를 위해 제작되었습니다
                         </dd>
+                    </dl>
+                    <dl class="card card3">
+                        <dt>
+                            한정판 아티스트 콜라보<br>
+                            라파엘 사딕
+                        </dt>
+                        <dd>복고와 현대의 조화로 만들어낸 아름다움</dd>
                     </dl>
                     <!-- card1  -->
                     <dl class="card card2">
@@ -108,26 +116,17 @@
                         <dd>
                             진정한 클래식과 시대를 초월한 빈티지
                         </dd>
-                        <!-- <dd><a href="#">바로가기</a></dd> -->
                     </dl>
-                    <!-- card2 -->
-                    <dl class="card card3">
+                    <dl class="card card1">
                         <dt>
-                            한정판 아티스트 콜라보<br>
-                            라파엘 사딕
-                        </dt>
-                        <dd>복고와 현대의 조화로 만들어낸 아름다움</dd>
-                    </dl>
-                    <!-- card3 -->
-                    <dl class="card card4">
-                        <dt>
-                            highway
+                            아티스트는 천사와 같으며, <br>
+                            펜더는 날개를 달아 줄 것이다
                         </dt>
                         <dd>
-                            간소화된 highway 시리즈는<br>
-                            라이브 어쿠스틱 연주자를 위해 제작되었습니다
+                            fender is our life and music, make a best
                         </dd>
                     </dl>
+
                 </div>
             </div>
             <div id="section1Btn">
@@ -161,7 +160,7 @@
                 <div id="slideLineInner"></div>
                 <!-- slideLine 전체영역 slideLineInner 100/8% -->
             </div>
-            <ul id="shopCard">
+            <ul class="shopCard" id="shopCard1">
                 <li class="shopPr shopPr1">
                     <dl>
                         <dt class="shopName">
@@ -169,7 +168,7 @@
                                 american vintageII 1961 <br><span>stratocaster</span>
                             </a>
                         </dt>
-                        <dd><img src="./img/shop1.png" alt="redguitar"></dd>
+                        <dd><img src="./img/shop1_0.png" alt="redguitar"></dd>
                         <dd class="shopPrice">2,430,000 KRW</dd>
                         <dd class="color sunbust">asunbust</dd>
                         <dd class="color wood">wood</dd>
@@ -184,7 +183,7 @@
                                 <span>stratocaster</span>
                             </a>
                         </dt>
-                        <dd><img src="./img/shop2.png" alt="redguitar"></dd>
+                        <dd><img src="./img/shop2_0.png" alt="redguitar"></dd>
                         <dd class="shopPrice">3,038,000 KRW</dd>
                         <dd class="color">black</dd>
                         <dd class="color">gray</dd>
@@ -201,7 +200,7 @@
                                 <span>stratocaster</span>
                             </a>
                         </dt>
-                        <dd><img src="./img/shop3.png" alt="redguitar"></dd>
+                        <dd><img src="./img/shop3_0.png" alt="redguitar"></dd>
                         <dd class="shopPrice">1,080,000 KRW</dd>
                         <dd class="color">red</dd>
                         <dd class="color">orange</dd>
@@ -219,7 +218,7 @@
                                 <span>telecaster</span>
                             </a>
                         </dt>
-                        <dd><img src="./img/shop4.png" alt="redguitar"></dd>
+                        <dd><img src="./img/shop4_0.png" alt="redguitar"></dd>
                         <dd class="shopPrice">3,510,000 KRW</dd>
                         <dd class="color">blue</dd>
                         <dd class="color">wine</dd>
@@ -235,11 +234,10 @@
                                 <span>telecaster</span>
                             </a>
                         </dt>
-                        <dd><img src="./img/shop5.png" alt="redguitar"></dd>
+                        <dd><img src="./img/shop5_0.png" alt="redguitar"></dd>
                         <dd class="shopPrice">3,230,000 KRW</dd>
                         <dd class="color">light-green</dd>
                         <dd class="color">wine</dd>
-                        <dd class="color">red</dd>
                     </dl>
                 </li>
                 <li class="shopPr shopPr6">
@@ -250,7 +248,7 @@
                                 <span>telecaster</span>
                             </a>
                         </dt>
-                        <dd><img src="./img/shop6.png" alt="redguitar"></dd>
+                        <dd><img src="./img/shop6_0.png" alt="redguitar"></dd>
                         <dd class="shopPrice">2,230,000 KRW</dd>
                         <dd class="color"></dd>
                     </dl>
@@ -264,7 +262,7 @@
                                 <span>jazzmaster</span>
                             </a>
                         </dt>
-                        <dd><img src="./img/shop7.png" alt="redguitar"></dd>
+                        <dd><img src="./img/shop7_0.png" alt="redguitar"></dd>
                         <dd class="shopPrice">2,425,000 KRW</dd>
                         <dd class="color">light-gray</dd>
                     </dl>
@@ -278,12 +276,15 @@
                                 <span>jazzmaster</span>
                             </a>
                         </dt>
-                        <dd><img src="./img/shop8.png" alt="redguitar"></dd>
+                        <dd><img src="./img/shop8_0.png" alt="redguitar"></dd>
                         <dd class="shopPrice">1,293,000 KRW</dd>
                         <dd class="color">beige</dd>
                     </dl>
                 </li>
             </ul>
+
+
+
             <a href="#" class="more" title="펜더샵 제품 더보기">더보기</a>
         </section>
         <!-- 섹션 샵 -->
@@ -305,6 +306,7 @@
                                 </dd>
                                 <dd>일렉트릭 기타의 정석을 담다</dd>
                             </dl>
+                            <div><video src="./video/card1.mp4" autoplay loop muted></video></div>
                         </a>
                         <a href="#">
                             <dl class="bodyCard bodyCard2">
@@ -315,6 +317,7 @@
                                 </dd>
                                 <dd>맑음과 묵직함을 담은 색다른 개성</dd>
                             </dl>
+                            <div><video src="./video/card2.mp4" autoplay loop muted></video></div>
                         </a>
                         <a href="#">
                             <dl class="bodyCard bodyCard3">
@@ -325,6 +328,7 @@
                                 </dd>
                                 <dd>노이즈와 빈티지의 레트로한 조화</dd>
                             </dl>
+                            <div><video src="./video/card3.mp4" autoplay loop muted></video></div>
                         </a>
                     </div>
                 </li>
@@ -341,8 +345,10 @@
                 <h2>펜더 기타만의 특별한 아티스트 에디션</h2>
                 <p>fender artist limited edition</p>
             </hgroup>
-            <div id="videoTest"></div>
-            <!-- div 이미지 확인용 추후 youtube 링크 달아오기 태그 바꾸기-->
+            <iframe id="videoTest" src="https://www.youtube.com/embed/XygXGO9bzBY?si=sTW6xOP0ljPBQhaY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <dl class="limitedVideo limitedVideo1">
                 <dt>
                     아티스트 시그니처 raphael saadik
@@ -368,7 +374,7 @@
                 <div>
                     <a href="#">
                         <dl>
-                            <dt>abcdefghijk</dt>
+                            <dt>Billy F Gibbons</dt>
                             <dd>efght</dd>
                         </dl>
                     </a>
@@ -384,7 +390,15 @@
                 <div>
                     <a href="#">
                         <dl>
-                            <dt>abcdefghijk</dt>
+                            <dt>Billy F Gibbons</dt>
+                            <dd>70년대 최고의 클래식</dd>
+                        </dl>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <dl>
+                            <dt>Billy F Gibbons</dt>
                             <dd>efght</dd>
                         </dl>
                     </a>
@@ -392,15 +406,7 @@
                 <div>
                     <a href="#">
                         <dl>
-                            <dt>abcdefghijk</dt>
-                            <dd>efght</dd>
-                        </dl>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <dl>
-                            <dt>abcdefghijk</dt>
+                            <dt>Billy F Gibbons</dt>
                             <dd>efght</dd>
                         </dl>
                     </a>
@@ -575,6 +581,18 @@
                 <li>버튼3</li>
             </ul>
         </section>
+        <!-- 이쁠것같아서 추가 -->
+        <section id="fenderPlay">
+            <h2 class="hidden">펜더플레이 혜택가입</h2>
+            <p>
+                무료로 시작할 수 있는 혜택으로
+                <br>
+                삶을 연주해보세요
+            </p>
+            <a href="#">
+                가입하기
+            </a>
+        </section>
     </main>
     <footer id="footer">
         <ul id="fnb">
@@ -643,103 +661,123 @@
             </small>
         </div>
     </footer>
-
     <script src="./js/common.js"></script>
     <script>
+        // 헤더 GNB크기조절
+
+
+
+        // let windowWidth = window.width();
+        // window.resize(function (e) {
+        //     windowWidth = $(this).width();
+        //     if (windowWidth > 1023) {
+        //         $('#header #gnb a').mouseenter(function (e) {
+        //             $('#header').css({ height: 26.0417 + 'vw' })
+        //         })
+        //         $('#header').mouseleave(function () {
+        //             $(this).css({ height: 5.2083 + 'vw' })
+        //         })
+        //     }
+        // })
+
+        // const header = document.getElementById('header');
+        // let headerHeight = [ 0.052083, 0.34];
+        // let index = 0;
+        // window.addEventListener("resize", function(event){
+        //     index = (window.innerWidth > 1023) ? 0 : 1;
+        //     header.style.height = `${headerHeight[index] * window.innerWidth}px`;
+        // })
+
+        // $('#header #gnb a').mouseenter(function (e) {
+        //     if (window.innerWidth < 1023) return;
+        //         header.style.height= `${0.260417*window.innerWidth}px`;
+        // })
+        // $('#header #gnb a').mouseleave(function (e) {
+        //     if (window.innerWidth < 1023) return;
+        //         header.style.height= `${0.052083*window.innerWidth}px`;
+        // })
+
+        // const header = document.getElementById('header');
+        // const maxHeight = 0.260417;
+        // let value = 0;
+
+        // window.addEventListener("resize", function(event){
+        //     value = (window.innerWidth > 1023) ?  0.052083 : 0.34;
+        //     header.style.height = `${value * window.innerWidth}px`;
+        // })
+
+        // $('#header #gnb a').mouseenter(function (e) {
+        //     if (window.innerWidth < 1023) return;
+        //         header.style.height= `${maxHeight * window.innerWidth}px`;
+        // })
+        // $('#header #gnb a').mouseleave(function (e) {
+        //     if (window.innerWidth < 1023) return;
+        //         header.style.height= `${value * window.innerWidth}px`;
+        // })
+
+        // header.style.transition = "0s";
+        // header.style.height = `${((window.innerWidth > 1023) ? headerHeight[0] : headerHeight[1]) * window.innerWidth}px`;
+        // slideNum = sliderLine.clientWidth / shopList.length;
+        const header = document.getElementById('header');
+        let headerHeight = [0.052083, 0.34, 0.2];
+        window.addEventListener("resize", function (event) {
+            // $('#header').css({transition: 0})
+            header.style.transition = '0';
+            if (window.innerWidth > 1023) {
+                header.style.height = `${headerHeight[0] * window.innerWidth}px`;
+            }
+            else if (window.innerWidth > 480) {
+                header.style.height = `${headerHeight[1] * window.innerWidth}px`;
+                header.style.transition = '0s'
+            }
+            else {
+                header.style.height = `${headerHeight[2] * window.innerWidth}px`;
+            }
+
+        })
+        $('#header #gnb a').mouseenter(function (e) {
+            if (window.innerWidth < 1023) return;
+            header.style.height = `${0.260417 * window.innerWidth}px`;
+            header.style.transition = "0.6s";
+        })
+        $('#header').mouseleave(function (e) {
+            if (window.innerWidth < 1023) return;
+            header.style.height = `${0.052083 * window.innerWidth}px`;
+
+        })
+
+
+        // 헤더언어선택버튼
+        $('#language').mouseenter(function () {
+            $(this).css({ height: 4.1667 + 'vw' })
+        })
+        $('#language').mouseleave(function () {
+            $(this).css({ height: 2.0833 + 'vw' })
+        })
+
         $('#brandInner dl').mouseenter(function () {
-            $(this).removeClass('brandOff').addClass('brandOn')
+            $('#brandInner dl').removeClass('brandOn')
+            $(this).addClass('brandOn')
         })
         $('#brandInner dl').mouseleave(function () {
-            $(this).removeClass('brandOn').addClass('brandOff')
+            $('#brandInner dl:eq(0)').addClass('brandOn')
+            $('#brandInner dl:eq(1)').removeClass('brandOn')
+            $('#brandInner dl:eq(2)').removeClass('brandOn')
         })
+
+
         // 슬라이드
-        let slideNum = 9.3750;
-        $('#shopList li a:eq(0)').mouseenter(function (e) {
-            e.preventDefault();
-            $('#slideLineInner').css({
-                left: slideNum * 0 + 'vw'
-            })
-        })
-        $('#shopList li a:eq(1)').mouseenter(function (e) {
-            e.preventDefault();
-            $('#slideLineInner').css({
-                left: slideNum * 1 + 'vw'
-            })
-        })
-        $('#shopList li a:eq(2)').mouseenter(function (e) {
-            e.preventDefault();
-            $('#slideLineInner').css({
-                left: slideNum * 2 + 'vw'
-            })
-        })
-        $('#shopList li a:eq(3)').mouseenter(function (e) {
-            e.preventDefault();
-            $('#slideLineInner').css({
-                left: slideNum * 3 + 'vw'
-            })
-        })
-        $('#shopList li a:eq(4)').mouseenter(function (e) {
-            e.preventDefault();
-            $('#slideLineInner').css({
-                left: slideNum * 4 + 'vw'
-            })
-        })
-        $('#shopList li a:eq(5)').mouseenter(function (e) {
-            e.preventDefault();
-            $('#slideLineInner').css({
-                left: slideNum * 5 + 'vw'
-            })
-        })
-        $('#shopList li a:eq(6)').mouseenter(function (e) {
-            e.preventDefault();
-            $('#slideLineInner').css({
-                left: slideNum * 6 + 'vw'
-            })
-        })
-        $('#shopList li a:eq(7)').mouseenter(function (e) {
-            e.preventDefault();
-            $('#slideLineInner').css({
-                left: slideNum * 7 + 'vw'
-            })
-        })
-        // 뉴스섹션
-        // $('#newsGridBtn li:eq(0)').click(function (e) {
-        //     e.preventDefault();
-        //     $(this).addClass('btnOn');
-        //     $(`#newsGridBtn li:eq(1)`).removeClass('btnOn');
-        //     $(`#newsGridBtn li:eq(2)`).removeClass('btnOn');
-        //     $('.newsGridInner dl:eq(0)').addClass('on');
-        //     $('.newsGridInner dl:eq(1)').removeClass('on');
-        //     $('.newsGridInner dl:eq(2)').removeClass('on');
-        //     $('.newsGridInner dl:eq(0)').data('imgsrc')
-        //     $(`#newsGrid`).removeClass()
-        //     $(`#newsGrid`).addClass('one')
-        // })
-        // $('#newsGridBtn li:eq(1)').click(function (e) {
-        //     e.preventDefault();
-        //     $(this).addClass('btnOn');
-        //     $(`#newsGridBtn li:eq(0)`).removeClass('btnOn');
-        //     $(`#newsGridBtn li:eq(2)`).removeClass('btnOn');
-        //     $('.newsGridInner dl:eq(1)').addClass('on');
-        //     $('.newsGridInner dl:eq(0)').removeClass('on');
-        //     $('.newsGridInner dl:eq(2)').removeClass('on');
-        //     $('.newsGridInner dl:eq(1)').data('imgsrc')
-        //     $(`#newsGrid`).removeClass()
-        //     $(`#newsGrid`).addClass('two')
+        const shopList = document.querySelectorAll('#shopList li a');
+        const sliderLine = document.getElementById('slideLine');
+        let slideNum = sliderLine.clientWidth / shopList.length;
 
-
-        // })
-        // $('#newsGridBtn li:eq(2)').click(function (e) {
-        //     e.preventDefault();
-        //     $(this).addClass('btnOn');
-        //     $(`#newsGridBtn li:eq(1)`).removeClass('btnOn');
-        //     $(`#newsGridBtn li:eq(0)`).removeClass('btnOn');
-        //     $('.newsGridInner dl:eq(2)').addClass('on');
-        //     $('.newsGridInner dl:eq(1)').removeClass('on');
-        //     $('.newsGridInner dl:eq(0)').removeClass('on');
-        //     $(`#newsGrid`).removeClass()
-        //     $('#newsGrid').addClass('three')
-        // })
+        for (let i = 0; i < shopList.length; i++) {
+            shopList[i].addEventListener('mouseenter', () => {
+                $('#slideLineInner').css({
+                    left: slideNum * i
+                })
+            })
+        }
 
         $('#newsGridBtn li').click(function (e) {
             e.preventDefault();
@@ -761,6 +799,79 @@
                 }
             }
         })
+        // artist카드
+        $('#artistGrid div').mouseenter(function (e) {
+            $(this).addClass('artistOn');
+        })
+        $('#artistGrid div').mouseleave(function (e) {
+            $(this).removeClass('artistOn');
+        })
+
+        // 컬러피커
+        const arrProduct = document.querySelectorAll('#shopCard1 .shopPr dl');
+        const arrProductImg = document.querySelectorAll('#shopCard1 .shopPr dl dd img');
+        let colorIndex = Array();
+        for (let i = 0; i < arrProduct.length; i++) {
+            colorIndex.push(arrProduct[i].getElementsByClassName('color'));
+            for (let j = 0; j < colorIndex[i].length; j++) {
+                colorIndex[i][j].addEventListener('click', () => {
+
+                    console.log('check');
+                    arrProductImg[i].setAttribute('src', `./img/shop${i + 1}_${j}.png`);
+                })
+            }
+        }
+
+        // 슬라이드
+        const shopCard = document.querySelector('.shopCard');
+        let isDragStart = false, prevPageX, prevScrollLeft;
+        const dragStart = (e) => {
+            isDragStart = true;
+            prevPageX = e.pageX;
+            prevScrollLeft = shopCard.scrollLeft;
+        }
+        const dragging = (e) => {
+            if (!isDragStart) return;
+            e.preventDefault();
+            let positionDiff = e.pageX - prevPageX;
+            shopCard.scrollLeft = prevScrollLeft - positionDiff;
+        }
+        const dragStop = () => {
+            isDragStart = false;
+        }
+        shopCard.addEventListener("mousedown", dragStart)
+        shopCard.addEventListener("mousemove", dragging)
+        shopCard.addEventListener("mouseup", dragStop)
+
+
+        // 앨범슬라이드
+        const songWrap = document.querySelector('#songWrap');
+        let isDragStart1 = false, prevPageX1, prevScrollLeft1;
+        const dragStart1 = (e) => {
+            isDragStart1 = true;
+            prevPageX1 = e.pageX;
+            prevScrollLeft1 = songWrap.scrollLeft;
+        }
+        const dragging1 = (e) => {
+            if (!isDragStart1) return;
+            e.preventDefault();
+            let postionDiff1 = e.pageX - prevPageX1;
+            songWrap.scrollLeft = prevScrollLeft1 - postionDiff1;
+        }
+        const dragStop1 = (e) => {
+            isDragStart1 = false;
+        }
+        songWrap.addEventListener('mousedown', dragStart1);
+        songWrap.addEventListener('mousemove', dragging1);
+        songWrap.addEventListener('mouseup', dragStop1);
+
+        // 헤더 대가리부분 토글
+        $('#moreBtn').on('click', () => {
+            $('#header #gnb').toggleClass('fadeShow')
+            $('#moreBtn').toggleClass("moreBtnOn")
+            $('#snb').toggleClass("moreBtnOn")
+            // $('body').toggleClass('noScroll');
+        });
 
 
 
